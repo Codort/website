@@ -9,9 +9,9 @@
             <div class="text-left">
               <div class="flex flex-col items-center">
                 <div class="flex items-stretch my-4">
-                  <NuxtImg class="h-12 sm:h-20 w-auto" src="/cody_colour.png" />
+                  <NuxtImg class="h-16 sm:h-20 w-auto" src="/cody_colour.png" />
                   <h1
-                    class="text-4xl sm:text-6xl lg:text-7xl font-bold ml-3 mt-2.5"
+                    class="text-5xl sm:text-6xl lg:text-7xl font-bold ml-3 mt-2.5"
                   >
                     Codort
                   </h1>
@@ -60,22 +60,19 @@
         </div>
       </div>
     </main>
-    <footer class="w-full bg-white text-black">
-      <div class="flex align-items-center justify-center">
-        <p class="text-center align-self-center">
-          &copy; Codort 2024 |
-          <a
-            href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
-            class="underline"
-            >Privacy Policy</a
-          >
-          |
-          <a class="underline" href="https://github.com/Codort/landing"
-            >GitHub</a
-          >
-          | <a class="underline" href="https://nuxt.com/">Powered by Nuxt</a>
-        </p>
-      </div>
-    </footer>
+    <footer class="w-full bg-white text-black flex flex-col sm:flex-row items-center justify-center ">
+  <div class="flex flex-wrap items-center justify-center">
+    <p class="inline mr-2">&copy; Codort 2024</p>
+    <span class="mr-2">|</span>
+    <a href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing" class="underline inline mr-2">Privacy Policy</a>
+    <span class="mr-2 hidden sm:inline-block">|</span>
+  </div>
+  <div class="flex flex-wrap items-center justify-center mt-2 sm:mt-0">
+    <a class="underline inline mr-2" href="https://github.com/Codort/landing">GitHub</a>
+    <span class="mr-2">|</span>
+    <a class="underline inline" href="https://nuxt.com/">Powered by Nuxt</a>
+  </div>
+</footer>
+
   </div>
 </template>
