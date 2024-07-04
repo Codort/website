@@ -38,7 +38,7 @@
         >
           <a
             href="https://discord.com/invite/4eeq29aD"
-            class="rounded-lg bg-white border-4 border-cdtgreen px-3.5 py-2.5 mb-3 sm:mb-0 text-sm font-semibold shadow-sm hover:bg-cdtgreen active:bg-cdtgreen flex"
+            class="rounded-lg bg-white border-4 border-cdtgreen justify-center py-2.5 mb-3 sm:mb-0 text-sm font-semibold shadow-sm hover:bg-cdtgreen active:bg-cdtgreen flex"
           >
             <Icon name="ic:baseline-discord" color="black" size="20px" />
             <span class="pl-2">Join our Discord</span>
