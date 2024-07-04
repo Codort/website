@@ -1,8 +1,8 @@
 
   <template>
 <div class="w-screen h-screen flex flex-col items-center text-black">
-    <div class="bg-[url('/background-20-720.png')] bg-contain sm:bg-auto relative px-6 pt-2 lg:px-8 w-full h-full  flex flex-col items-center">
-      <div class="mx-auto max-w-2xl py-6 sm:py-32 lg:py-48">
+    <div class="bg-[url('/background-15-720.png')] bg-contain sm:bg-auto relative px-6 pt-2 lg:px-8 w-full h-full  flex flex-col items-center">
+      <div class="mx-auto max-w-3xl py-6 sm:py-32 lg:py-48">
         <div class="text-left">
           <div class="flex flex-col items-center">
             <NuxtImg class="h-36 sm:h-48 w-auto" src="/cody_colour.png" />
@@ -11,7 +11,11 @@
           </div>
 
           <div class="flex flex-col items-center">
-          <p class="mt-6 text-md sm:text-xl leading-8 text-center">We are building an open-core platform to change the future of open source. Join the journey: build, maintain, manage, and contribute from Day 0.</p>
+          <p class="mt-6 text-md sm:text-xl leading-8 text-center">
+            Our open-core platform radically improves how open source software is developed, managed and maintained. Be part of the journey from Day 0: build, maintain, manage and contribute.
+            <br><br>
+            Connect with us to find out more.
+          </p>
           <div class="mt-10 items-center justify-left gap-3 gap-sm-6 grid grid-cols-1 sm:grid-cols-3">
             <a href="https://discord.com/invite/4eeq29aD" class="rounded-lg bg-white border-4 border-cdtgreen px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-cdtgreen active:bg-cdtgreen flex">
               <Icon name="ic:baseline-discord" color="black" size="20px"/>
