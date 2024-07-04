@@ -1,7 +1,7 @@
 
   <template>
 <div class="w-screen h-screen flex flex-col items-center text-black">
-    <div class="bg-[url('/background-15-720.png')] bg-contain sm:bg-auto relative px-6 pt-2 lg:px-8 w-full h-full  flex flex-col items-center">
+    <div class="bg-[url('/background-bw.png')] bg-contain sm:bg-auto relative px-6 pt-2 lg:px-8 w-full h-full  flex flex-col items-center">
       <div class="mx-auto max-w-3xl py-6 sm:py-32 lg:py-48">
         <div class="text-left">
           <div class="flex flex-col items-center">
