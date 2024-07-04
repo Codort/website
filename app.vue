@@ -12,7 +12,7 @@
 
           <div class="flex flex-col items-center">
           <p class="mt-6 text-md sm:text-xl leading-8 text-center">We are building an open-core platform to change the future of open source. Join the journey: build, maintain, manage, and contribute from Day 0.</p>
-          <div class="mt-10 flex items-center justify-left gap-3 gap-sm-6 grid grid-cols-1 sm:grid-cols-3">
+          <div class="mt-10 items-center justify-left gap-3 gap-sm-6 grid grid-cols-1 sm:grid-cols-3">
             <a href="https://discord.com/invite/4eeq29aD" class="rounded-lg bg-white border-4 border-cdtgreen px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-cdtgreen active:bg-cdtgreen flex">
               <Icon name="ic:baseline-discord" color="black" size="20px"/>
               <span class="pl-2">Join our Discord</span>
@@ -30,4 +30,9 @@
       </div>
     </div>
   </div>
+  <footer class="w-full bg-white text-black absolute bottom-0 py-1">
+    <div class="flex align-items-center justify-center">
+      <p class="text-center align-self-center"> &copy; Codort 2024 | <a href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing" class="underline">Privacy Policy</a></p>
+    </div>
+  </footer>
   </template>
