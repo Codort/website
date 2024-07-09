@@ -37,7 +37,7 @@
           class="mt-10 sm:flex-row items-center justify-left sm:gap-6 grid grid-cols-1 sm:grid-cols-3 mb-5"
         >
           <a
-            href="https://discord.com/invite/4eeq29aD"
+            href="https://discord.com/invite/nnBHHbMr23"
             class="rounded-lg bg-white border-4 border-cdtgreen justify-center py-2.5 mb-3 sm:mb-0 text-sm font-semibold shadow-sm hover:bg-cdtgreen active:bg-cdtgreen flex"
           >
             <Icon name="ic:baseline-discord" color="black" size="20px" />
