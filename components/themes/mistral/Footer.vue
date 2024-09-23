@@ -13,7 +13,7 @@
                             {{ item.name }}
                         </NuxtLink>
                     </li>
-                </ul>
+                </ul>z
             </div>
             <div>
                 <div class="flex flex-col items-end">
@@ -79,6 +79,6 @@
 
 <script setup lang="ts">
 
-const config = useAppConfig()
+const config:any = useAppConfig()
 const menu = config.menu
 </script>

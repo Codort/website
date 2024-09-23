@@ -123,7 +123,7 @@
 </template>
 
 <script setup lang="ts">
-const config = useAppConfig()
+const config:any = useAppConfig()
 const menu = config.menu
 const blogName = config.name
 
