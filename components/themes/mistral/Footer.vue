@@ -13,7 +13,7 @@
                             {{ item.name }}
                         </NuxtLink>
                     </li>
-                </ul>z
+                </ul>
             </div>
             <div>
                 <div class="flex flex-col items-end">
