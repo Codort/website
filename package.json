@@ -1,24 +1,43 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@nuxt/icon": "^1.0.0",
-    "@nuxt/image": "^1.7.0",
-    "@nuxtjs/tailwindcss": "^6.12.0",
-    "nuxt": "^3.12.3",
-    "vue": "latest"
-  },
-  "devDependencies": {
-    "@iconify-json/ic": "^1.1.17",
-    "@iconify-json/jam": "^1.1.8",
-    "@nuxtjs/google-fonts": "^3.2.0"
-  }
+    "name": "@bloggrify/mistral",
+    "description": "A Nuxt.js theme for Bloggrify",
+    "license": "All Rights Reserved",
+    "version": "1.2.1",
+    "author": "Eventually Coding <contact@eventuallycoding.com>",
+    "type": "module",
+    "main": "./nuxt.config.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bloggrify/bloggrify-mistral.git"
+    },
+    "files": [
+        "components",
+        "composables",
+        "layouts",
+        "app.config.ts",
+        "nuxt.config.ts",
+        "tailwind.config.js"
+    ],
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "lint": "eslint ."
+    },
+    "dependencies": {
+        "@bloggrify/core": "1.4.1",
+        "@nuxt/icon": "^1.1.1",
+        "@nuxt/image": "^1.7.0",
+        "@nuxtjs/google-fonts": "^3.2.0",
+        "nuxt": "3.11.2"
+    },
+    "devDependencies": {
+        "@iconify-json/ic": "^1.1.17",
+        "@iconify-json/jam": "^1.1.8",
+        "@nuxt/eslint-config": "^0.2.0",
+        "autoprefixer": "10.4.17",
+        "eslint": "8.56.0",
+        "sass": "^1.77.8"
+    }
 }
