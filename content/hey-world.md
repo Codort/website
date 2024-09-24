@@ -11,7 +11,7 @@ draft: false
 listed: true
 ---
 
-# Open != Stealth
+### Open != Stealth
 
 Hi, we believe that modern tech companies should be as open as possible, so the 'stealth' thing doesn't really work for us.
 As much as possible, we'll be developing our strategy, business model, and platform in the open.
