@@ -5,24 +5,27 @@
       <div
         class="bg-[url('/images/bg-yellow.png')] bg-auto bg-repeat relative px-6 min-h-[95vh] flex items-center justify-center my-0 py-0"
         id="indexbg">
-        <div id="mc_embed_shell" class="bg-white/80 ms-7 p-0 sm:p-5 rounded-lg py-9 max-w-3xl mt-[100px] md:mt-0">
+        <div id="mc_embed_shell"
+          class="bg-white/80 ms-7 p-0 sm:p-5 rounded-lg py-9 max-w-3xl mt-[100px] md:mt-0">
           <div id="mc_embed_signup">
             <form
-              action="https://codort.us14.list-manage.com/subscribe/post?u=1ace6638ad702b3ee9eb639b1&amp;id=6e0c8184b8&amp;v_id=4916&amp;f_id=00ceb7e5f0"
+              action="https://codort.us14.list-manage.com/subscribe/post?u=1ace6638ad702b3ee9eb639b1&amp;id=6e0c8184b8&amp;v_id=4921&amp;f_id=00ceb7e5f0"
               method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
               class="validate" target="_self" novalidate="">
               <div id="mc_embed_signup_scroll p-0 sm:px-5">
                 <h1 class="text-center text-3xl lg:text-5xl font-bold mt-2.5">
-                Stay in touch
+                  Stay in touch
                 </h1>
-                <div class="p-0 py-3 sm:p-3 text-left border-b-4 border-cdtyellow text-lg lg:text-2xl">
-                <p class="pb-2">
-                  Email us at <a class="a" href="mailto:hello@codort.com">hello@codort.com</a> to learn more about Codort.
-                </p>
-                <p>
-                  Subscribe to our mailing list to stay up to date with our latest news
-                including blogs, feature updates, opportunities to contribute and job posts.
-                </p>
+                <div
+                  class="p-0 py-3 sm:p-3 text-left border-b-4 border-cdtyellow text-lg lg:text-2xl">
+                  <p class="pb-2">
+                    Email us at <a class="a" href="mailto:hello@codort.com">hello@codort.com</a>
+                    to learn more about Codort.
+                  </p>
+                  <p>
+                    Subscribe to our mailing list to stay up to date with our latest news
+                    including blogs, feature updates, opportunities to contribute and job posts.
+                  </p>
                 </div>
                 <p class="text-md p-0 pt-3 sm:p-7 text-center"></p>
                 <div class="flex flex-col justify-center align-middle mx-auto w-100 sm:w-[70%]">
@@ -41,16 +44,26 @@
                     <input type="email" name="EMAIL" class="required email input" id="mce-EMAIL"
                       required="" value="">
                   </div>
+                  <div class="mc-field-group input-group p-3">
+                    <strong class="inline mr-2">Are you interested in being a beta tester?</strong>
+                    <p class="inline">Tick here to get early access to our platform.</p>
+                    <ul>
+                      <li class="p-2"><input type="checkbox" name="group[51289][1]"
+                          id="mce-group[51289]-51289-0" value=""><label
+                          for="mce-group[51289]-51289-0" class="p-5">Yes</label></li>
+                    </ul><span id="mce-group[51289]-HELPERTEXT" class="helper_text"></span>
+                  </div>
                   <div id="mergeRow-gdpr"
                     class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
                     <div class="content__gdpr p-3">
                       <p>
-                        By signing up to our mailing list you agree to your data being processed in
+                        By signing up to our mailing list you agree to your data being processed
+                        in
                         line
                         with our <a
                           href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing">Privacy
                           Policy</a>.
-                        You can unsubscribe at any time.
+                        You can unsubscribe at any time.<span class="asterisk">*</span>
                       </p>
                       <fieldset class="mc_fieldset gdprRequired mc-field-group p-2"
                         name="interestgroup_field">
@@ -94,6 +107,11 @@
 </template>
 
 <script setup lang="ts">
-import Header from '~/components/themes/mistral/Header.vue'
-import Footer from '~/components/themes/mistral/Footer.vue'
+  import Header from '~/components/themes/mistral/Header.vue'
+  import Footer from '~/components/themes/mistral/Footer.vue'
+
+
+  useHead({
+    title: 'Contact Us'
+  })
 </script>

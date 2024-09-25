@@ -19,4 +19,7 @@
     category: string;
     tag: string;
   }>()
+  useHead({
+    title: 'Articles'
+  })
 </script>

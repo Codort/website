@@ -60,4 +60,7 @@
 <script setup lang="ts">
   import Header from '~/components/themes/mistral/Header.vue'
   import Footer from '~/components/themes/mistral/Footer.vue'
+  useHead({
+    title: 'Codort'
+  })
 </script>
