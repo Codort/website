@@ -52,7 +52,7 @@ From that point 'source code hosting' platforms moved to 'source code management
 ![Timeline of SCM evolution.](/images/covers/evolution.png)
 
 ### Source code monoliths
-As practices (DevOps, GitOps, and all the others) have emerged over the past two decades, source code management platforms (SCMs) have tried to incorporate them all into their systems, creating monoliths that try to do *everything* involving source code, which we call (with our tongues in cheek), 'SCMOps'.
+As practices (DevOps, GitOps, and all the others) have emerged over the past two decades, source code management platforms (SCMs) have tried to incorporate them all into their systems, creating monoliths that try to do *everything* involving source code, which we call (with our tongues in cheek), 'SourceOps'.
 This is very far from the simple code hosting of the first systems.
 
 The question we've been asking ourselves is whether this is a good thing?
