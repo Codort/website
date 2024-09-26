@@ -87,9 +87,9 @@
                         <input type="text" name="b_1ace6638ad702b3ee9eb639b1_6e0c8184b8"
                           tabindex="-1" value="">
                       </div>
-                      <div class="clear foot flex justify-center items-center button">
+                      <div class="clear foot flex button self-center">
                         <button type="submit" name="subscribe" id="mc-embedded-subscribe"
-                          class="button">
+                          class="flex items-center">
                           <Icon name="ic:email" color="black" size="20px" />
                           <span class="pl-2">Subscribe</span>
                         </button>
@@ -101,7 +101,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </main>
     <Footer />
@@ -117,3 +116,9 @@
     title: 'Contact Us'
   })
 </script>
+
+<style scoped>
+  .bg-gradient {
+    background: radial-gradient(circle at 0% 140%, #e5fcf5 0%, #f0afae 40%, #7db6c3 100%);
+  }
+</style>
