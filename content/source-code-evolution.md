@@ -13,7 +13,7 @@ listed: true
 
 We're going back 70 years to look at how managing source code has evolved.
 From manually typing code printed in magazines to using sophisticated all-encompassing cloud-based providers, the journey has been fast.
-Has it been too fast?
+Has that been a good thing?
 
 ### Public domain and type-in
 
