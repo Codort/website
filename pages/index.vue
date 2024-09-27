@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-gradient m-0">
+  <SlowRadialBlur class="flex flex-col min-h-screen bg-gradient m-0">
+    <!-- <div class="flex flex-col min-h-screen bg-gradient m-0"> -->
     <div class="noise-overlay m-0"></div>
     <Header />
     <main class="flex-grow flex items-center px-6">
@@ -19,8 +20,10 @@
 
                   If these problems sound familiar,
                   <a href="mailto:hello@codort.com">email us</a> or
-                  <a href="https://calendar.app.google/CuPH2sRtvcajvXvn9">set up a meeting</a> now.
-                  Join our <a href="https://discord.com/invite/nnBHHbMr23">Discord</a> to take part
+                  <a href="https://calendar.app.google/CuPH2sRtvcajvXvn9">set up a meeting</a>
+                  now.
+                  Join our <a href="https://discord.com/invite/nnBHHbMr23">Discord</a> to take
+                  part
                   in the source code revolution.
                 </p>
               </div>
@@ -45,7 +48,7 @@
       </div>
     </main>
     <Footer />
-  </div>
+  </SlowRadialBlur>
 </template>
 
 <script setup lang="ts">
