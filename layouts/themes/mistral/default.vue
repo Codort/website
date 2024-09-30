@@ -1,6 +1,5 @@
 <template>
   <div class="bg-[#e5fcf5]">
-    <HeaderStatic />
     <main class="p-6">
       <div v-if="doc">
         <div v-if="doc.cover" class="md:flex justify-center mt-24 hidden">
@@ -30,8 +29,7 @@
   </div>
 </template>
 <script setup lang="ts">
-  import HeaderStatic from '~/components/themes/mistral/HeaderStatic.vue'
-  import Footer from '~/components/themes/mistral/Footer.vue'
+  import Footer from '~/components/Footer.vue'
   import ArticleHeader from '~/components/themes/mistral/ArticleHeader.vue'
 
   const props = defineProps<{

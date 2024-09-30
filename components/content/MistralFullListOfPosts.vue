@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bloglist">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 bloglist">
       <ContentList :query="query">
         <template #not-found>
           <p>No posts found.</p>
@@ -10,7 +10,7 @@
             <div v-if="shouldDisplayYear(list, article.date, index)" class="mb-4">
               <span class="text-3xl font-bold">{{
                 getYear(article.date)
-              }}</span>
+                }}</span>
             </div>
             <div class="flex items-center">
               <img :src="`/images/${article.cover}`" class="w-[100px] mr-5" />
