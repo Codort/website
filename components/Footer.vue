@@ -1,5 +1,6 @@
 <template>
-  <footer class="mt-auto border-t border-black text-black pt-2">
+  <footer :class="{ 'transparent': isTransparent, 'opaque': !isTransparent }"
+    class="mt-auto border-t border-black text-black pt-2">
     <div class="px-2 sm:px-6 lg:px-10">
       <div class="flex justify-between">
         <div>
@@ -56,7 +57,23 @@
 </template>
 
 <script setup lang="ts">
-
   const config: any = useAppConfig()
   const menu = config.menu
+
+  defineProps({
+    isTransparent: {
+      type: Boolean,
+      default: false
+    }
+  });
 </script>
+
+<style lang="scss" scoped>
+  .transparent {
+    background-color: transparent;
+  }
+
+  .opaque {
+    background: #e5fcf5;
+  }
+</style>

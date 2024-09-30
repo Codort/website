@@ -15,7 +15,7 @@
                     {{ article.title }}
                   </h2>
                   <p class="text-gray-700 mb-4">
-                    {{ desc(article) }}
+                    {{ article }}
                   </p>
                   <div class="mb-3">
                     <span class="text-sm text-gray-500">{{ formatDate(article.date) }}
@@ -64,7 +64,7 @@
 
   function desc(article: any): string {
     return (
-      article.description.slice(0, 200) + '...' ||
+      // article.description.slice(0, 200) + '...' ||
       article.body.slice(0, 200) + '...'
     )
   }

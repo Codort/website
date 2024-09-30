@@ -1,9 +1,24 @@
 <template>
-  <div class="flex flex-col min-h-screen min-w-screen w-full bg-gradient m-0">
-    <Header :isTransparent="false" />
-    <main class="flex-grow flex px-6">
+  <div class="flex flex-col min-h-screen min-w-screen w-full bg-gradient m-0 h-full">
+    <Header :isTransparent="isHeaderTransparent" />
+    <main class="flex-grow flex h-full">
       <slot />
     </main>
-    <Footer />
+    <Footer :isTransparent="isHeaderTransparent" />
   </div>
 </template>
+
+<script setup>
+  import { computed } from 'vue';
+  import { useRoute } from 'vue-router';
+
+  const route = useRoute();
+
+  console.log('route = ', route.path)
+
+  const isHeaderTransparent = computed(() => {
+    const transparentRoutes = ['index', 'contact'];
+    const transparentPaths = ['/archives'];
+    return transparentRoutes.includes(route.name) || transparentPaths.includes(route.path);
+  });
+</script>

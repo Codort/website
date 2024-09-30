@@ -1,8 +1,9 @@
 <template>
   <div class="relative w-full flex flex-col items-center my-0 py-0 pt-10">
-    <div class="grid grid-cols-2 items-center">
-      <div class="ms-10">
-        <div class="py-3 sm:p-3 text-left border-b-4 border-cdtyellow text-lg lg:text-2xl">
+    <div class="grid grid-cols-1 sm:grid-cols-2 items-center">
+      <div class="ms-5 sm:ms-10">
+        <div
+          class="pt-[100px] sm:pt-0 px-0 py-3 sm:p-3 text-left border-b-4 border-cdtyellow text-lg lg:text-2xl">
           <p class="pb-2">
             Email us at <a class="a" href="mailto:hello@codort.com">hello@codort.com</a>
             to learn more about Codort.
@@ -13,7 +14,7 @@
       </div>
       <div class="flex flex-col">
         <div id="mc_embed_shell"
-          class="ms-7 p-0 sm:p-5 rounded-lg py-9 max-w-3xl mt-[100px] md:mt-0 flex items-center justify-center align-middle">
+          class="ms-7 p-0 sm:p-5 rounded-lg pb-10 pt-5 sm:py-0 sm:py-9 max-w-3xl sm:mt-[100px] md:mt-0 flex items-center justify-center align-middle">
           <div id="mc_embed_signup">
             <form
               action="https://codort.us14.list-manage.com/subscribe/post?u=1ace6638ad702b3ee9eb639b1&amp;id=6e0c8184b8&amp;v_id=4921&amp;f_id=00ceb7e5f0"

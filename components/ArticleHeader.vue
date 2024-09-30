@@ -43,4 +43,11 @@
   }>();
 
   const author = findAuthor(props.article.author);
+
+  function desc(article: any): string {
+    return (
+      // article.description.slice(0, 200) + '...' ||
+      article.body.slice(0, 200) + '...'
+    )
+  }
 </script>

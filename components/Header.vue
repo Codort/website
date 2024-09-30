@@ -1,7 +1,8 @@
 <template>
   <header :class="{ 'transparent': isTransparent, 'opaque': !isTransparent }"
-    class="sm:justify-start sm:flex-nowrap z-11 w-full text-sm border bg-header">
-    <nav class="transition-colors fixed w-full z-10 top-0 pt-10 bg-header">
+    class="sm:justify-start sm:flex-nowrap z-11 w-full text-sm border">
+    <nav :class="{ 'transparent': isTransparent, 'opaque': !isTransparent }"
+      class="transition-colors fixed w-full z-10 top-0 pt-10">
       <div class="px-2 sm:px-6 lg:px-10">
         <div class="relative flex items-center justify-between h-12">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -88,6 +89,6 @@
   }
 
   .opaque {
-    background-color: #e5fcf5;
+    background: #e5fcf5;
   }
 </style>
