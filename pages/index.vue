@@ -4,7 +4,7 @@
       <div class="mx-auto max-w-3xl py-10">
         <div class="text-left">
           <div class="flex flex-col items-start">
-            <p class="mt-2 text-xl text-left pe-6">
+            <p class="mt-2 text-2xl/[40px] text-left pe-6">
               Fed up of manually hacking tools together through CI/CD scripts?
               Fed up of not being able to use the latest AI-powered solution
               because it's not approved on your SCM's marketplace? Say hello to

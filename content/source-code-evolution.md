@@ -52,7 +52,7 @@ Git allows developers to have a copy of their repository locally, it has snapsho
 As Git was rapidly taken up by the coding community, a few developers realised its full potential as a hub for coders worldwide, and GitHub was launched in 2008 with BitBucket also launched in the same year.
 From that point 'source code hosting' platforms moved to 'source code management', with solutions including built-in tools for issue tracking, feature requests, and code review.
 
-![Timeline of SCM evolution.](/images/covers/evolution.png)
+![](/images/covers/evolution.png)
 
 ### Source code monoliths
 

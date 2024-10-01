@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1 class="text-5xl text-gray-700 font-extrabold text-center mb-3">
+    <h1 class="text-5xl text-white font-extrabold text-center mb-3">
       {{ article.title }}
     </h1>
 
     <div class="grid grid-cols-3 text-center sm:w-full md:w-1/2 mx-auto">
       <div>
-        <p class="text-center font-bold my-4 text-slate-500 text-xs">
+        <p class="text-center font-bold my-4 text-white text-xs">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 inline-block"
@@ -25,7 +25,7 @@
         </p>
       </div>
       <div>
-        <p class="text-center font-bold my-4 text-slate-500 text-xs">
+        <p class="text-center font-bold my-4 text-white text-xs">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 inline-block"
@@ -54,7 +54,7 @@
           class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
         />
         <div>
-          <div class="font-bold text-slate-500 text-xs">
+          <div class="font-bold text-white text-xs">
             {{ author.name }}
           </div>
         </div>

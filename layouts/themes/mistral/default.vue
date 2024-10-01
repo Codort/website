@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#e5fcf5] w-full h-full min-h-screen pt-[100px] sm:pt-0">
+  <div class="bg-[#1b2629] w-full h-full min-h-screen pt-[100px] sm:pt-0">
     <div v-if="doc">
       <div v-if="doc.cover" class="md:flex justify-center mt-24 hidden">
         <img
@@ -17,7 +17,7 @@
               <ContentRenderer
                 id="nuxtContent"
                 :value="doc"
-                class="prose text-sm md:text-xl min-w-full md:p-10 mx-auto"
+                class="prose text-sm md:text-xl min-w-full md:p-10 mx-auto text-white"
               />
             </div>
           </div>

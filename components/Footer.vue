@@ -1,7 +1,11 @@
 <template>
   <footer
-    :class="{ transparent: isTransparent, opaque: !isTransparent }"
-    class="mt-auto border-t border-black text-black pt-2"
+    :class="{
+      transparent: isTransparent,
+      opaque: !isTransparent,
+      dark: isDark,
+    }"
+    class="mt-auto border-t border-black text-black dark:text-white pt-2"
   >
     <div class="px-2 sm:px-6 lg:px-10">
       <div class="flex justify-between">
@@ -11,7 +15,7 @@
               <NuxtLink
                 :key="item.path"
                 :to="item.path"
-                class="hover:text-gray-700 pe-2"
+                class="hover:text-gray-700 dark:hover:text-slate-400 dark:text-white pe-2"
               >
                 {{ item.name }}
               </NuxtLink>
@@ -24,7 +28,7 @@
               <NuxtLink
                 v-if="config.socials.github"
                 aria-label="Open github profile"
-                class="text-sm text-black transition hover:text-gray-700"
+                class="text-sm text-black transition hover:text-gray-700 dark:text-white dark:hover:text-slate-400"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 :to="config.socials.github"
@@ -43,7 +47,7 @@
               <NuxtLink
                 v-if="config.socials.linkedin"
                 aria-label="Open linkedin profile"
-                class="text-sm text-gray-500 transition hover:text-gray-600"
+                class="text-sm text-gray-500 transition hover:text-gray-600 dark:text-white dark:hover:text-slate-400"
                 target="_blank"
                 rel="noopener noreferrer"
                 :to="config.socials.linkedin"
@@ -63,19 +67,28 @@
           </div>
         </div>
       </div>
-      <div class="inline mb-2 space-x-2 text-sm text-black">
+      <div class="inline mb-2 space-x-2 text-sm text-black dark:text-white">
         <span>© {{ config.name }} {{ new Date().getFullYear() }}</span>
         <span>•</span>
         <a
+          class="dark:text-white dark:hover:text-slate-400"
           href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
+          >Privacy Policy</a
         >
-          Privacy Policy
-        </a>
         <span>•</span>
         <span>
           Powered by
-          <a href="https://nuxt.com/">Nuxt</a> and
-          <a href="https://github.com/bloggrify/bloggrify">Bloggrify</a>
+          <a
+            class="dark:text-white dark:hover:text-slate-400"
+            href="https://nuxt.com/"
+            >Nuxt</a
+          >
+          and
+          <a
+            class="dark:text-white dark:hover:text-slate-400"
+            href="https://github.com/bloggrify/bloggrify"
+            >Bloggrify</a
+          >
         </span>
       </div>
     </div>
@@ -91,6 +104,10 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  isDark: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
@@ -100,6 +117,6 @@ defineProps({
 }
 
 .opaque {
-  background: #e5fcf5;
+  background: #1b2629;
 }
 </style>

@@ -1,6 +1,10 @@
 <template>
   <header
-    :class="{ transparent: isTransparent, opaque: !isTransparent }"
+    :class="{
+      transparent: isTransparent,
+      opaque: !isTransparent,
+      dark: isDark,
+    }"
     class="sm:justify-start sm:flex-nowrap z-11 w-full text-sm border"
   >
     <nav
@@ -63,7 +67,10 @@
                 <!-- <div class="flex"> -->
                 <!-- <img v-if="config.logo" :src="config.logo" class="h-10 rounded-full mr-2" -->
                 <!-- alt="logo" /> -->
-                <nuxt-link class="text-4xl pt-1 ps-[50px] sm:ps-0" to="/">
+                <nuxt-link
+                  class="text-4xl pt-1 ps-[50px] sm:ps-0 dark:text-white dark:hover:text-slate-400"
+                  to="/"
+                >
                   Codort
                 </nuxt-link>
                 <!-- </div> -->
@@ -75,7 +82,7 @@
                   v-for="item in menu"
                   :key="item.path"
                   :to="item.path"
-                  class="text-black hover:text-gray-500 pe-5 py-2 rounded-md text-lg font-medium font-to-invert-to-black"
+                  class="text-black hover:text-gray-500 dark:text-white dark:hover:text-slate-400 pe-5 py-2 rounded-md text-lg font-medium font-to-invert-to-black"
                 >
                   {{ item.name }}
                 </NuxtLink>
@@ -112,25 +119,20 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  isDark: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
 <style lang="scss" scoped>
-.inverted {
-  .font-to-invert-to-black {
-    @apply text-slate-700 transition-all;
-
-    &:hover {
-      @apply text-white;
-    }
-  }
-}
-
 .transparent {
   background-color: transparent;
 }
 
 .opaque {
-  background: #e5fcf5;
+  background: #1b2629;
+  opacity: 0.98;
 }
 </style>

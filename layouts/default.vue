@@ -2,11 +2,17 @@
   <div
     class="flex flex-col min-h-screen min-w-screen w-full bg-gradient m-0 h-full"
   >
-    <Header :is-transparent="isHeaderTransparent" />
+    <Header
+      :is-transparent="isHeaderTransparent"
+      :is-dark="!isHeaderTransparent"
+    />
     <main class="flex-grow flex h-full">
       <slot />
     </main>
-    <Footer :is-transparent="isHeaderTransparent" />
+    <Footer
+      :is-transparent="isHeaderTransparent"
+      :is-dark="!isHeaderTransparent"
+    />
   </div>
 </template>
 
