@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  html, body {
+  html,
+  body {
     font-family: Inter, system-ui, sans-serif;
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@
 }
 
 .asterisk {
-  color:red;
+  color: red;
 }
 
 .input {
@@ -24,59 +25,66 @@
   margin-top: 0.5rem;
 }
 
- .button {
-   position: relative;
-   width: 250px;
-   height: 50px;
-   clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
-   overflow: hidden;
-   padding: 10px 20px;
-   text-decoration: none;
-   background-color: #e5fcf5;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+.button {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+  overflow: hidden;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #e5fcf5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- .button:hover, .button:active {
-   content: '';
-   background: #7db6c3;
- }
+.button:hover,
+.button:active {
+  content: '';
+  background: #7db6c3;
+}
 
- .bg-gradient {
-   background: radial-gradient(circle at 20% 30%, #e5fcf5 0%, #f0afae 40%, #7db6c3 100%);
- }
+.bg-gradient {
+  background: radial-gradient(
+    circle at 20% 30%,
+    #e5fcf5 0%,
+    #f0afae 40%,
+    #7db6c3 100%
+  );
+}
 
- .noise-overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='5' stitchTiles='stitch' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E");
-   opacity: 0.2;
-   pointer-events: none;
-   mix-blend-mode: overlay;
- }
+.noise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='5' stitchTiles='stitch' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E");
+  opacity: 0.2;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
 
 footer a {
-  @apply underline
+  @apply underline;
 }
 
 main a {
-  @apply underline text-black visited:text-black hover:text-black
+  @apply underline text-black visited:text-black hover:text-black;
 }
 
 .button {
-  @apply no-underline text-black visited:text-black hover:text-black
+  @apply no-underline text-black visited:text-black hover:text-black;
 }
 
-.bloglist a, .taglist a {
-  @apply no-underline text-black hover:text-gray-600 visited:text-black
+.bloglist a,
+.taglist a {
+  @apply no-underline text-black hover:text-gray-600 visited:text-black;
 }
 
 .taglist a {
-  @apply  hover:text-gray-400
+  @apply hover:text-gray-400;
 }

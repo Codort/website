@@ -1,11 +1,11 @@
 ---
-id: "cdt20240924"
-title: "The Evolution of Source Code"
+id: 'cdt20240924'
+title: 'The Evolution of Source Code'
 description: "It's surprisingly interesting!"
-date: "2024-09-24"
-cover: "covers/typein.png"
+date: '2024-09-24'
+cover: 'covers/typein.png'
 tags:
-    - "blog"
+  - 'blog'
 hidden: false
 draft: false
 listed: true
@@ -26,6 +26,7 @@ In 1972, the source code control system (SCCS) was released, with a public versi
 SCSS dominated Unix but notably lacked features that are common in modern solutions such as networking capabilities and limited branching.
 
 ### Copyright and forges
+
 In the 70s, sharing of software hit a block in the form of copyright, allowing closed source software businesses to really take off, not that this stopped the hackers, who carried on sharing software without paying licensing fees, something that led Bill Gates to write the infamous '[An Open Letter to Hobbyists](https://upload.wikimedia.org/wikipedia/commons/f/f9/Bill_Gates_Letter_to_Hobbyists_ocr.pdf)'.
 Saving the Open movement, Richard Stallman founded the GNU project and created the copyleft licence (licenses are the subject for a whole other blog).
 As developers fought back, the need for better, centralised ways to manage code became more important.
@@ -35,12 +36,14 @@ CVS also allows multiple developers to work on projects simultaneously, with a c
 Open-source and collaborative software really began to take off.
 
 ### Collaboration and hosting
+
 The 90s propelled collaborative software development with the release of Linux under Stallman's copyleft licence, the definition of the term 'open source' and the birth of the [Open Source Initiative](https://opensource.org/).
 The formalisation of the movement allowed more cohesive controls and development for necessary software collaboration features such as mailing lists for discussing feature requests and bug tracking.
 However, software was still being shared and collaborated on via a mishmash of different mediums, including in print, private networks of FTP sites, and online bulletin boards.
 So at the end of the 90s, [SourceForge](https://sourceforge.net/) was founded as the first provider of a centralized location for open-source software.
 
 ### Git and source code management
+
 The open source movement and collaborative coding exploded in the 00s.
 As SourceForge demonstrated the potential for collaboration, other platforms for code hosting and management appeared, including GNU Savannah and Launchpad.
 Then, in 2005, Git was released as a distributed version control system by Linus Torvalds.
@@ -52,14 +55,15 @@ From that point 'source code hosting' platforms moved to 'source code management
 ![Timeline of SCM evolution.](/images/covers/evolution.png)
 
 ### Source code monoliths
-As practices (DevOps, GitOps, and all the others) have emerged over the past two decades, source code management platforms (SCMs) have tried to incorporate them all into their systems, creating monoliths that try to do *everything* involving source code, which we call (with our tongues in cheek), 'SourceOps'.
+
+As practices (DevOps, GitOps, and all the others) have emerged over the past two decades, source code management platforms (SCMs) have tried to incorporate them all into their systems, creating monoliths that try to do _everything_ involving source code, which we call (with our tongues in cheek), 'SourceOps'.
 This is very far from the simple code hosting of the first systems.
 
 The question we've been asking ourselves is whether this is a good thing?
-Should a single platform have *all* the control over your code? Over how it is hosted and what tools you can use to manage it?
+Should a single platform have _all_ the control over your code? Over how it is hosted and what tools you can use to manage it?
 When modern-day solutions include AI-powered tools for intelligent code review, issue tracking, and code generation, why are they still being shoehorned into decades-old platforms via frustrating scripts and a plethora of tokens?
 Don't get us wrong, we're not saying today's solutions are bad, we just think things could be more efficient.
 
 Are you also frustrated?
-Join us in the *source code orchestration* revolution.
+Join us in the _source code orchestration_ revolution.
 <a href="/contact">Get in touch today</a>.
