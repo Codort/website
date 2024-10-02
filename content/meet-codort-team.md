@@ -3,7 +3,7 @@ id: 'cdt20241001'
 title: 'Meet the Team'
 description: 'Meet the people helping get Codort off the ground.'
 date: '2024-10-01'
-cover: 'covers/cody_black.png'
+cover: 'covers/team.png'
 tags:
   - 'intro'
 hidden: false
@@ -15,7 +15,8 @@ As an early start-up, our team means everything to us. We are very lucky to have
 
 ### Christopher Wilcox, Head of Technology
 
-![](https://media.licdn.com/dms/image/v2/D4D03AQEHy48NGX9gBA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713435749508?e=1733356800&v=beta&t=HkbDxk3IkaiYfwtEqtKYPT23bR8eL7qiZRki_Z7e86w)
+![](/images/team/chris.jpeg)
+
 Chris has two decades of experience building products and technologies across multiple sectors. Chris is also an obsessive cook, Sri Lankan cuisine is his specialty du jour.
 
 I am an experienced technologist with twenty years of building digital products and experiences, as a software engineer and then in technology leadership. I’ve worked across many sectors and with companies at different stages in their lifecycle, including starting my own agencies and start-ups. As well as supporting Codort, I am advising another proptech start-up as a fractional CTO. In past roles I’ve had the chance to work with several household names including John Lewis, HSBC, and Unilever.
@@ -24,9 +25,9 @@ As I speak to more of my peers and continue to network at conferences, I’m fin
 
 Codort’s team have a fantastic background and pedigree and I’m looking forward to working closely with them all!
 
-### Remo Gettini, Adviser
+![](/images/team/remo.jpeg)
 
-![](https://media.licdn.com/dms/image/v2/C5603AQH_6Fm1qU3Z7w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1580412865083?e=1733356800&v=beta&t=tA_d5wUnVC7FH01HigMHYeL8HiLoQU0Ko8u9ENxM3Uo)
+### Remo Gettini, Adviser
 
 Remo is an accomplished CTO with experience across gaming, e-commerce, and animation. Remo helped lead Depop to its unicorn acquisition by Etsy, but he still finds time for regular swimming and piano (that diploma won’t earn itself)!
 
@@ -36,9 +37,9 @@ In today’s technology landscape, where open-source components are integral to 
 
 What excites me most about Codort’s proposition is its potential to empower enterprises with the insights and controls they need to navigate the complexities of managing software. I am particularly excited that more robust controls over source code will allow organisations to harness the benefits of open-source technologies without the inherent risks. I believe this initiative not only enhances operational efficiency but also fosters a culture of responsibility and trust in software development. I am thrilled to contribute to a vision that transforms how enterprises manage their technology stacks, ultimately leading to safer and more resilient digital ecosystems.
 
-### Jordan Harband, Adviser
+![](/images/team/jordan.jpeg)
 
-![](https://images.prismic.io/openjsf/ZivER93JpQ5PTNXJ_2022headshot.jpg?auto=format%2Ccompress&w=200&h=200)
+### Jordan Harband, Adviser
 
 Jordan maintains hundreds of open-source packages with billions of downloads. Jordan is a big advocate for work/life balance and avoiding maintainer burnout, and he always finds lots of time for family, scuba and ski.
 
@@ -50,9 +51,9 @@ I am an advocate of open source tools and believe that any software that makes i
 
 Follow me on GitHub @ljharb to stay up-to-date with projects I’m maintaining. ¯\_(ツ)\_/¯
 
-### Ekaterina Shatalina, Adviser
+![](/images/team/ekaterina.jpeg)
 
-![](https://media.licdn.com/dms/image/v2/C4E03AQEotcuQmyv0Og/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660205158988?e=1732752000&v=beta&t=x80nd6WoXaaz1Ry9OJRToMN-Wm6F5WlhxMc43IgyNWY)
+### Ekaterina Shatalina, Adviser
 
 Ekaterina is a neuroscientist building complex computational models, she previously worked as an investor at the VC firm Creator Fund.
 
@@ -62,17 +63,15 @@ With a common background in academia, I’ve spent many years talking to Raphael
 
 And for fun I like to do extra coding! I’m currently working on building meta-science tools for psychiatry and psychopharmacology research. I’ve spent a lot of time over the past few months working with the team on the Codort business model, fun times ahead!
 
+![](/images/team/charlotte.jpeg)
+
 ### Charlotte Misseldine, Founder’s Associate
 
-<div style="float: right;">
-<img src="https://media.licdn.com/dms/image/v2/D4E03AQH3892_syS8lg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711900760573?e=1732752000&v=beta&t=6PZ9ROGcwOc9ev3jwjYqhbV6Uo04tAo4A8GNLCu3P8Y" />
-</div>
+Charlotte Misseldine is a Founder's Associate for OSPO Now, helping ensure the smooth functioning and growth of the business. She is a freelance events, project, and community manager, with a strong background in tech and health tech events. Prior to transitioning to freelance work, she managed large-scale international conferences and summits, such as World Summit AI, Intelligent Health AI, and at HIMSS.
 
-<style scoped>
-  img {
-    border-radius: 30%;
-  }
-  </style>
+Since going freelance, Charlotte has continued to manage events of varying scales. But has also found a passion in community management, currently serving as the Community Manager for One HealthTech, where she finds enjoyment in running a community that exists to promote better equality and diversity in health tech. She began her professional journey as a certified Classical Ballet Teacher and ran a dance school in Harrogate. After realising her real passion lay in organisation, she retrained at the UK Centre for Events Management.
+
+![](/images/team/raphael.jpg)
 
 ### Raphael Sonabend, Founder
 
@@ -85,3 +84,12 @@ This experience, combined with insights from developers worldwide, revealed comm
 I am very grateful for the incredible team that is advising and helping us out. I am also excited by everyone joining our Discord (even before things have really kicked off) and the huge excitement we’re seeing as we continue to engage developers across the ecosystem. I think Codort’s future looks bright and I’m looking forward to continuing the journey.
 
 Want to join this incredible team? We’re not actively hiring right now but we will be looking for full-stack developers (Python/JavaScript) soon, feel free to email a CV to jobs@codort.com and we’ll be in touch when we have something suitable.
+
+<style scoped>
+  img {
+    border-radius: 30%;
+    float: right;
+    width: 200px;
+    height: 200px;
+  }
+</style>

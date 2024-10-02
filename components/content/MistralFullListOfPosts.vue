@@ -7,18 +7,18 @@
         </template>
         <template #default="{ list }">
           <div
-            v-for="(article, index) in list"
+            v-for="article in list"
             :key="article._path"
             class="mb-8 ml-4 lg:ml-0"
           >
-            <div
+            <!-- <div
               v-if="shouldDisplayYear(list, article.date, index)"
               class="mb-4"
             >
               <span class="text-3xl font-bold">{{
                 getYear(article.date)
               }}</span>
-            </div>
+            </div> -->
             <div class="flex items-center">
               <img :src="`/images/${article.cover}`" class="w-[100px] mr-5" />
               <div class="">

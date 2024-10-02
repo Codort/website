@@ -5,8 +5,8 @@
         <img
           :src="'/images/' + doc.cover"
           :alt="doc.title"
-          fit="cover"
-          placeholder
+          width="200px"
+          height="200px"
         />
       </div>
       <div class="px-4 mx-auto sm:px-6 xl:max-w-7xl xl:px-0 mt-10">
