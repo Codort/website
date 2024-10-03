@@ -1,25 +1,32 @@
 <template>
-  <Header />
-  <div>
-    <h2 class="mt-14 mx-auto md:p-4 text-4xl font-bold text-black mb-8 flex justify-center">
+  <div class="w-full px-6">
+    <h2 class="mt-24 md:p-4 text-4xl font-bold text-black mb-8 text-center">
       Codort Articles
     </h2>
     <MistralFullListOfPosts />
   </div>
-  <Footer />
 </template>
 <script setup lang="ts">
-  import Header from '~/components/themes/mistral/Header.vue'
-  import Footer from '~/components/themes/mistral/Footer.vue'
-  defineProps<{
-    doc: any;
-    docs: any;
-    currentPage: number;
-    total: number;
-    category: string;
-    tag: string;
-  }>()
-  useHead({
-    title: 'Articles'
-  })
+defineProps<{
+  doc: any;
+  docs: any;
+  currentPage: number;
+  total: number;
+  category: string;
+  tag: string;
+}>();
+useHead({
+  title: 'Articles',
+});
 </script>
+
+<style scoped>
+.bg-gradient {
+  background: radial-gradient(
+    ellipse at 0% 10%,
+    #e5fcf5 0%,
+    #f0afae 50%,
+    #7db6c3 100%
+  );
+}
+</style>
