@@ -6,9 +6,9 @@ date: '2024-10-01'
 cover: 'covers/team.png'
 tags:
   - 'intro'
-hidden: false
-draft: false
-listed: true
+hidden: true
+draft: true
+listed: false
 ---
 
 As an early start-up, our team means everything to us. We are very lucky to have an incredible group of advisors who are helping to steer the direction of the business and to advise on all areas of the company. We conducted a brief text-based interview with our team so you can learn more about their backgrounds and why they wanted to be part of Codort. We asked the team what they do outside of Codort, why Codort excites them and what pain points they’re hoping we can solve.

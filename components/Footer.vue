@@ -1,11 +1,10 @@
 <template>
   <footer
     :class="{
-      transparent: isTransparent,
-      opaque: !isTransparent,
       dark: isDark,
+      'md:bg-transparent': isTransparent || $route.meta.transparentHeader,
     }"
-    class="mt-auto border-t border-black text-black dark:text-white pt-2"
+    class="mt-auto border-t border-black text-black dark:text-white pt-2 transition-colors bg-[#f0afae] dark:bg-[#1b2629]"
   >
     <div class="px-2 sm:px-6 lg:px-10">
       <div class="flex justify-between">

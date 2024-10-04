@@ -1,23 +1,25 @@
 <template>
   <header
-    :class="{
-      transparent: isTransparent,
-      opaque: !isTransparent,
-      dark: isDark,
-    }"
-    class="sm:justify-start sm:flex-nowrap z-11 w-full text-sm border"
+    :class="{ dark: isDark }"
+    class="sm:justify-start sm:flex-nowrap z-11 w-full text-sm border bg-opacity-5"
   >
     <nav
-      :class="{ transparent: isTransparent, opaque: !isTransparent }"
-      class="transition-colors fixed w-full z-10 top-0 pt-10"
+      :class="[
+        'transition-colors fixed w-full z-10 top-0 pt-10 pb-5',
+        {
+          'md:bg-transparent': isTransparent || $route.meta.transparentHeader,
+          'bg-[#f0afae] dark:bg-[#1b2629] bg-opacity-[0.97] dark:bg-opacity-[0.97]':
+            !(isTransparent || $route.meta.transparentHeader),
+        },
+      ]"
     >
       <div class="px-2 sm:px-6 lg:px-10">
         <div class="relative flex items-center justify-between h-12">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button
               type="button"
-              class="inline-flex items-center justify-center p-2 rounded-md text-black focus:outline-none"
+              class="inline-flex items-center justify-center p-2 rounded-md dark:text-white focus:outline-none"
               aria-controls="mobile-menu"
               aria-expanded="false"
               @click="mobileMenuOpen = !mobileMenuOpen"
@@ -61,14 +63,14 @@
             class="items-start justify-start sm:items-stretch sm:justify-start w-[100%]"
           >
             <div
-              class="flex-shrink-0 flex items-start pb-2 sm:pb-0 border-b-2 border-black w-[100%]"
+              class="flex-shrink-0 flex items-start pb-2 sm:pb-0 sm:border-b-2 border-black w-[100%]"
             >
-              <div class="text-black hover:text-gray-900">
+              <div class="hover:text-gray-900">
                 <!-- <div class="flex"> -->
                 <!-- <img v-if="config.logo" :src="config.logo" class="h-10 rounded-full mr-2" -->
                 <!-- alt="logo" /> -->
                 <nuxt-link
-                  class="text-4xl pt-1 ps-[50px] sm:ps-0 dark:text-white dark:hover:text-slate-400"
+                  class="text-4xl pt-1 ps-0 dark:text-white dark:hover:text-slate-400"
                   to="/"
                 >
                   Codort
@@ -82,7 +84,7 @@
                   v-for="item in menu"
                   :key="item.path"
                   :to="item.path"
-                  class="text-black hover:text-gray-500 dark:text-white dark:hover:text-slate-400 pe-5 py-2 rounded-md text-lg font-medium font-to-invert-to-black"
+                  class="hover:text-gray-500 dark:text-white dark:hover:text-slate-400 pe-5 py-2 rounded-md text-lg font-medium font-to-invert-to-black"
                 >
                   {{ item.name }}
                 </NuxtLink>
@@ -99,7 +101,7 @@
             v-for="item in menu"
             :key="item.path"
             :to="item.path"
-            class="text-black hover:text-gray-500 block px-3 py-2 rounded-md text-base font-medium font-to-invert-to-black"
+            class="hover:text-gray-500 block px-3 py-2 rounded-md text-base font-medium font-to-invert-to-black"
           >
             {{ item.name }}
           </NuxtLink>
@@ -125,14 +127,3 @@ defineProps({
   },
 });
 </script>
-
-<style lang="scss" scoped>
-.transparent {
-  background-color: transparent;
-}
-
-.opaque {
-  background: #1b2629;
-  opacity: 0.98;
-}
-</style>

@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   ],
   googleFonts: {
     families: {
-      Inter: [400, 700],
+      'IBM Plex Sans': [400, 700],
     },
     display: 'swap',
   },
