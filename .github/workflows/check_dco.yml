@@ -12,12 +12,8 @@ jobs:
 
       - name: Check DCO Sign-off
         run: |
-          # Fetch all commits from the PR branch
-          git fetch origin +refs/pull/${{ github.event.pull_request.number }}/merge
-
-          # Get commit details
-          base_branch=${{ github.event.pull_request.base.ref }}
-          for commit in $(git rev-list origin/${base_branch}..HEAD); do
+          commits=${{ github.event.pull_request.commits }}
+          for commit in $commits; do
             # Extract committer name and email
             committer_name=$(git log -1 --pretty=format:'%cn' $commit)
             committer_email=$(git log -1 --pretty=format:'%ce' $commit)
