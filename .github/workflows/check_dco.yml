@@ -16,7 +16,8 @@ jobs:
           git fetch origin +refs/pull/${{ github.event.pull_request.number }}/merge
 
           # Get commit details
-          for commit in $(git rev-list origin/HEAD..HEAD); do
+          base_branch=${{ github.event.pull_request.base.ref }}
+          for commit in $(git rev-list origin/${base_branch}..HEAD); do
             # Extract committer name and email
             committer_name=$(git log -1 --pretty=format:'%cn' $commit)
             committer_email=$(git log -1 --pretty=format:'%ce' $commit)
