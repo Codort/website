@@ -20,6 +20,18 @@
         "maintenance",
         "review"
       ]
+    },
+    {
+      "login": "chriswalnut",
+      "name": "Chris Wilcox",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26250981?v=4",
+      "profile": "https://github.com/chriswalnut",
+      "contributions": [
+        "code",
+        "design",
+        "ideas",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
