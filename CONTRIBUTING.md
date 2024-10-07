@@ -13,15 +13,18 @@ In return, we ask that you make a pledge to us.
 
 ### Our pledge to you:
 
-We will **never** rug pull.
-If you submit code under an open-source license, it will always and forever be open source.
-We may modify or copy code and use it in our proprietary codebase, but we will never relicense open-source code you provide under a proprietary license.
-We will always consult our community about any chances to open-source licenses or community documentation such as our code of conduct.
+1. We will **never** rug pull. If you submit code under an open-source license, it will always and forever be open source.
+2. We may modify or copy code and use it in our proprietary codebase, but we will never relicense open-source code you provide under a proprietary license.
+3. We will always consult our community about any chances to open-source licenses or community documentation such as our code of conduct.
 
 ### Your pledge to us:
 
-You will agree, and **always** adhere to, our [code of conduct](CODE_OF_CONDUCT.md).
-You will sign the [developer certificate of origin](#DCO) for all commits that you make.
+1. You agree, and will **always** adhere to, our [code of conduct](CODE_OF_CONDUCT.md).
+2. You will sign the [developer certificate of origin](#DCO) for all commits that you make.
+3. You agree that any violations of the DCO, for example if you submit code you did not have the right to submit, will result in your commits being removed from our codebase and you will be permanently banned from contributing.
+4. You will not make any anonymous contributions.
+
+We understand this final pledge may be controversial, but we believe trust must go in two directions. We do not allow any commits that have clearly fake names. Whilst we accept GitHub allows obfuscated email addresses, we generally prefer your real email is used (or at least one you just use for GitHub). It is important for us to know exactly who is making commits.
 
 ## DCO
 
@@ -29,6 +32,9 @@ All contributions to the Codort codebase must be signed-off to indicate you have
 To sign the DCO, simply add `-s` after all commits that you make, to do this easily you can make a git alias from the command line, for example:
 
 `$ git config --global alias.cos "commit -s"`
+
+Will allow you to write `git cos` which will automatically sign-off your commit.
+In the near future we will add server-side push protections as well as better checks to prevent user spoofing user names and emails.
 
 ```
 Developer Certificate of Origin
