@@ -1,3 +1,5 @@
+# Contributing to Codort
+
 ## Our commitment to open source
 
 We are huge advocates of open source.
