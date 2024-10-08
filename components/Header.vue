@@ -1,19 +1,17 @@
 <template>
   <header
-    :class="{ dark: isDark }"
+    :class="{ dark: isDark || $route.meta.isDark }"
     class="sm:justify-start sm:flex-nowrap z-11 w-full text-sm border bg-opacity-5"
   >
     <nav
       :class="[
-        'transition-colors fixed w-full z-10 top-0 pt-10 pb-5',
+        'transition-colors fixed w-full z-10 top-0 pt-10 pb-5 px-2 sm:px-6 lg:px-10 bg-[#f0afae] dark:bg-[#1b2629] bg-opacity-[0.97] dark:bg-opacity-[0.97]',
         {
           'md:bg-transparent': isTransparent || $route.meta.transparentHeader,
-          'bg-[#f0afae] dark:bg-[#1b2629] bg-opacity-[0.97] dark:bg-opacity-[0.97]':
-            !(isTransparent || $route.meta.transparentHeader),
         },
       ]"
     >
-      <div class="px-2 sm:px-6 lg:px-10">
+      <div class="">
         <div class="relative flex items-center justify-between h-12">
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->

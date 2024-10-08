@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/google-fonts',
     '@nuxt/icon',
+    '@vesp/nuxt-fontawesome',
   ],
   googleFonts: {
     families: {
@@ -15,6 +16,12 @@ export default defineNuxtConfig({
   },
   image: {
     format: ['webp'],
+  },
+  fontawesome: {
+    icons: {
+      solid: ['arrow-right'],
+    },
+    component: 'fa',
   },
   app: {
     head: {
