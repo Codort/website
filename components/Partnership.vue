@@ -1,6 +1,6 @@
 <template>
   <div
-    class="partnership shadow-xl bg-white border-black text-black rounded-md p-6 transition-all"
+    class="bg-gradient-to-r from-[#fda20b] via-[#efb0cf] to-[#e5e9e4] dark:from-[#000000] dark:via-[#c294c2] dark:via-[60%] dark:to-[#fe9c5a] dark:to-[100%] transition-all shadow-2xl border-black text-black rounded-md p-6 ring-2 hover:shadow-3xl ring-black dark:ring-white hover:ring-coral dark:hover:ring-coral"
   >
     <h3 class="">{{ name }}</h3>
     <p class="text-lg">{{ description }}</p>
@@ -22,48 +22,3 @@ defineProps({
   },
 });
 </script>
-
-<style scoped>
-@property --grad1 {
-  syntax: '<color>';
-  initial-value: #fda20b;
-  inherits: false;
-}
-
-@property --grad2 {
-  syntax: '<color>';
-  initial-value: #efb0cf;
-  inherits: false;
-}
-
-@property --grad3 {
-  syntax: '<color>';
-  initial-value: #e5e9e4;
-  inherits: false;
-}
-
-.partnership {
-  background: linear-gradient(
-    to right,
-    var(--grad1) 0%,
-    var(--grad2) 30%,
-    var(--grad3) 90%
-  );
-  transition:
-    --grad1 1s,
-    --grad2 1s,
-    --grad3 1s;
-}
-
-.partnership:hover {
-  background: linear-gradient(
-    var(#e5e9e4) 0%,
-    var(#e5e9e4) 0%,
-    var(#efb0cf) 80%
-  );
-
-  --grad1: #e5e9e4;
-  --grad2: #fda20b;
-  --grad3: #efb0cf;
-}
-</style>

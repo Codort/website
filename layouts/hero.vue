@@ -1,5 +1,7 @@
 <template>
-  <SlowRadialBlur class="flex flex-col min-h-screen bg-gradient m-0">
+  <SlowRadialBlur
+    class="flex flex-col min-h-screen bg-gradient-light dark:bg-gradient-dark m-0"
+  >
     <div class="noise-overlay m-0"></div>
     <Header :is-transparent="true" />
     <main class="flex-grow flex items-center px-6">

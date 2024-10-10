@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 items-center">
       <div class="ms-5 sm:ms-10">
         <div
-          class="pt-[100px] sm:pt-0 px-0 py-3 sm:p-3 text-left border-b-4 border-cdtyellow text-lg lg:text-2xl"
+          class="pt-[100px] sm:pt-0 px-0 py-3 sm:p-3 text-left border-b-4 border-coral text-lg lg:text-2xl"
         >
           <p class="pb-2 text-2xl/[40px]">
             Email us at

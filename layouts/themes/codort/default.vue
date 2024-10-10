@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#1b2629] w-full h-full min-h-screen pt-[100px] sm:pt-0">
+  <div class="w-full h-full min-h-screen pt-[150px] sm:pt-[50px]">
     <div v-if="doc">
       <div v-if="doc.cover" class="md:flex justify-center mt-24 hidden">
         <img
@@ -12,12 +12,12 @@
       <div class="px-4 mx-auto sm:px-6 xl:max-w-7xl xl:px-0 mt-10">
         <ArticleHeader :article="doc" />
         <div class="text-left mx-auto">
-          <div class="flex flex-wrap lg:flex-row-reverse py-12">
+          <div class="flex flex-wrap lg:flex-row-reverse py-6">
             <div class="w-full px-5 max-w-none centered-image">
               <ContentRenderer
                 id="nuxtContent"
                 :value="doc"
-                class="prose text-sm md:text-xl min-w-full md:p-10 mx-auto text-white"
+                class="min-w-full md:p-10 mx-auto prose"
               />
             </div>
           </div>

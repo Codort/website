@@ -22,9 +22,10 @@
             <div class="flex items-center">
               <img :src="`/images/${article.cover}`" class="w-[100px] mr-5" />
               <div class="">
-                <NuxtLink :to="article._path" class="text-gray-700">
-                  <span class="text-xl">{{ article.date }}</span> &middot;
-                  <span class="text-xl">{{ article.title }}</span>
+                <NuxtLink :to="article._path" class="a">
+                  <p class="text-xl inline">
+                    {{ article.date }} &middot; {{ article.title }}
+                  </p>
                 </NuxtLink>
                 <div>{{ article.description }}</div>
                 <span class="text-xs font-bold">{{

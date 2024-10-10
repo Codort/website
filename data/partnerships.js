@@ -15,6 +15,6 @@ export default [
     id: 'whitelabel-partner',
     name: 'White Label Partner',
     description:
-      'Fed up of managing integrations for source code management tools yourself? Become a White Label Partner and integrate Codort into your backend with your own branding. Seamlessly add and manage integrations without the hassle of maintaining them yourself.',
+      'Fed up of managing integrations for source code management tools yourself? Become a White Label Partner and integrate Codort into your backend with your own branding. Seamlessly add integrations without the hassle of maintaining them yourself.',
   },
 ];

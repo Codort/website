@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col min-h-screen min-w-screen w-full bg-gradient m-0 h-full"
+    class="flex flex-col min-h-screen min-w-screen w-full bg-gradient-light dark:bg-gradient-dark m-0 h-full"
   >
     <Header :is-transparent="isTransparent" :is-dark="isDark" />
     <main class="flex-grow flex h-full">

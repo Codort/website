@@ -1,63 +1,35 @@
 <template>
   <div>
-    <h1 class="text-5xl text-white font-extrabold text-center mb-3">
+    <h1 class="text-5xl font-extrabold text-center mb-3">
       {{ article.title }}
     </h1>
 
     <div class="grid grid-cols-3 text-center sm:w-full md:w-1/2 mx-auto">
-      <div>
-        <p class="text-center font-bold my-4 text-white text-xs">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 inline-block"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-            />
-          </svg>
+      <div class="flex flex-row justify-center self-start gap-2 items-center">
+        <Icon name="fa-solid:calendar" class="w-6 h-6" />
+        <p class="font-bold text-md">
           {{ formatDate(article.date) }}
         </p>
       </div>
-      <div>
-        <p class="text-center font-bold my-4 text-white text-xs">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 inline-block"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
+      <div class="flex flex-row justify-center self-start gap-2 items-center">
+        <Icon name="fa-solid:clock" class="w-6 h-6" />
+        <p class="font-bold text-md">
           {{ article.readingTime.text }}
         </p>
       </div>
       <div
         v-if="author"
-        class="flex items-center font-medium sm:mx-3 justify-center"
+        class="flex flex-row justify-center self-start gap-2 items-center"
       >
         <img
           :src="author.avatar"
           loading="lazy"
           alt=""
-          class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
+          class="w-6 h-6 rounded-full"
         />
-        <div>
-          <div class="font-bold text-white text-xs">
-            {{ author.name }}
-          </div>
-        </div>
+        <p class="font-bold text-md">
+          {{ author.name }}
+        </p>
       </div>
     </div>
   </div>

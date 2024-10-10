@@ -3,7 +3,7 @@ id: 'cdt20240719'
 title: 'Hey World'
 description: "Codort's first blog, with many more to come."
 date: '2024-07-26'
-cover: 'covers/cody_black.png'
+cover: 'covers/cody.png'
 tags:
   - 'intro'
 hidden: false

@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full px-6 sm:px-48">
-    <h2 class="mt-24 md:p-4 text-4xl font-bold text-black mb-8 text-center">
+  <div class="w-full px-6 pt-10 sm:pt-0 sm:px-48">
+    <h2 class="mt-24 md:p-4 text-4xl font-bold mb-8 text-center">
       Codort Articles
     </h2>
     <MistralFullListOfPosts />

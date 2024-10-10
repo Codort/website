@@ -3,8 +3,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        cdtyellow: '#FFC200',
-        cdtgreen: '#00AF4F',
+        white: '#e5e5dd',
+        black: '#313129',
+        coral: '#ff6045',
+        lightgrey: '#9f9f97',
+        lightgray: '#9f9f97',
+        midgrey: '#c7c7bf',
+        midgray: '#c7c7bf',
       },
       fontSize: {
         sm: '0.8rem',

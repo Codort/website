@@ -2,12 +2,17 @@
 export default defineNuxtConfig({
   extends: ['@bloggrify/core'],
   modules: [
-    '@nuxtjs/tailwindcss',
     '@nuxt/image',
     '@nuxtjs/google-fonts',
-    '@nuxt/icon',
     '@vesp/nuxt-fontawesome',
+    '@nuxt/ui',
   ],
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    storageKey: 'nuxt-color-mode',
+    classSuffix: '',
+  },
   googleFonts: {
     families: {
       'IBM Plex Sans': [400, 700],
