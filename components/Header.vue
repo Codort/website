@@ -61,8 +61,10 @@
                     aria-label="Change colour mode"
                     @click="toggleColourMode"
                   ></UButton>
-                  <Icon :name="isDark ? 'fa:moon-o' : 'fa:sun-o'"></Icon>
                 </ColorScheme>
+                <Icon name="fa:sun-o"></Icon>
+                <Icon name="fa:sun"></Icon>
+                <Icon name="fa:github"></Icon>
               </div>
             </div>
             <div class="hidden sm:block left-0 font-mark pb-6">
