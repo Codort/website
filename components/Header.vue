@@ -62,8 +62,6 @@
                     @click="toggleColourMode"
                   ></UButton>
                 </ColorScheme>
-                <Icon name="fa:sun-o"></Icon>
-                <Icon name="fa:moon-o"></Icon>
               </div>
             </div>
             <div class="hidden sm:block left-0 font-mark pb-6">
