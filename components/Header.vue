@@ -52,14 +52,20 @@
                 <!-- </div> -->
               </div>
               <div class="flex items-center justify-end pb-3 sm:pb-2">
-                <UButton
-                  v-model="isDark"
-                  :icon="isDark ? 'uil:moon' : 'uil:sun'"
-                  variant="ghost"
-                  class="text-black dark:text-white"
-                  aria-label="Change colour mode"
-                  @click="isDark = !isDark"
-                ></UButton>
+                <ColorScheme placeholder="" tag="span">
+                  <UButton
+                    v-model="isDark"
+                    :icon="
+                      isDark
+                        ? 'heroicons:moon-20-solid'
+                        : 'heroicons:sun-20-solid'
+                    "
+                    variant="ghost"
+                    class="text-black dark:text-white"
+                    aria-label="Change colour mode"
+                    @click="toggleColourMode"
+                  ></UButton>
+                </ColorScheme>
               </div>
             </div>
             <div class="hidden sm:block left-0 font-mark pb-6">
@@ -80,7 +86,7 @@
 
       <!-- Mobile menu, show/hide based on menu state. -->
       <div :class="mobileMenuOpen ? '' : 'hidden'">
-        <div class="mx-2 pt-2 space-y-1 bg-[#f0afae]">
+        <div class="mx-2 pt-2 space-y-1 bg-[#f0afae] dark:bg-[#080d17]">
           <NuxtLink
             v-for="item in menu"
             :key="item.path"
@@ -103,14 +109,16 @@ const menu = config.menu;
 const mobileMenuOpen = ref(false);
 
 const colorMode = useColorMode();
-const isDark = computed({
-  get() {
-    return colorMode.value === 'dark';
-  },
-  set() {
-    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
-  },
+const isDark = ref(false);
+
+onMounted(() => {
+  isDark.value = colorMode.preference === 'dark';
 });
+
+const toggleColourMode = () => {
+  isDark.value = !isDark.value;
+  colorMode.preference = isDark.value ? 'dark' : 'light';
+};
 
 defineProps({
   isTransparent: {
