@@ -8,13 +8,13 @@
 
 ## About Codort
 
-🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂😐 <Br>
+😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😐 <Br>
 😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐 <Br>
 😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐😐 <Br>
 😐😐😐😐😐😐😐😢😢😢😢😢😢😢😢😢😢😢😢😢 <Br>
 😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢
 
-Did you know that [only 1/5 developers are actually happy at work and the majority are _just complacent_](https://survey.stackoverflow.co/2024/professional-developers/#3-satisfied-at-current-job)?
+Did you know that [less than 1/5 developers are actually happy at work and the majority are _just complacent_](https://survey.stackoverflow.co/2024/professional-developers/#3-satisfied-at-current-job)?
 We think that's really sad.
 
 The world runs on technology, which runs on code, which depends on developers.
