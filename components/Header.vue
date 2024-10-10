@@ -62,6 +62,8 @@
                     @click="toggleColourMode"
                   ></UButton>
                 </ColorScheme>
+                <Icon name="fa:sun-o" class="w-0 h-0"></Icon>
+                <Icon name="fa:moon-o" class="w-0 h-0"></Icon>
               </div>
             </div>
             <div class="hidden sm:block left-0 font-mark pb-6">
@@ -116,16 +118,6 @@ const toggleColourMode = () => {
   isDark.value = !isDark.value;
   colorMode.preference = isDark.value ? 'dark' : 'light';
 };
-
-// Preload icons
-loadIcons(['fa:sun-o', 'fa:moon-o'], (loaded, missing, pending) => {
-  if (loaded.length) {
-    console.log('Icons have been preloaded.');
-  }
-  if (missing.length) {
-    console.log('Some icons could not be found.');
-  }
-});
 
 defineProps({
   isTransparent: {
