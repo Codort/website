@@ -55,11 +55,7 @@
                 <ColorScheme placeholder="" tag="span">
                   <UButton
                     v-model="isDark"
-                    :icon="
-                      isDark
-                        ? 'heroicons:moon-20-solid'
-                        : 'heroicons:sun-20-solid'
-                    "
+                    :icon="isDark ? 'fa:moon-o' : 'fa-sun-o'"
                     variant="ghost"
                     class="text-black dark:text-white"
                     aria-label="Change colour mode"

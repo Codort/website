@@ -5,13 +5,17 @@
     </h1>
 
     <div class="grid grid-cols-3 text-center sm:w-full md:w-1/2 mx-auto">
-      <div class="flex flex-row justify-center self-start gap-2 items-center">
+      <div
+        class="flex flex-row justify-center self-center sm:self-start gap-2 items-center"
+      >
         <Icon name="fa-solid:calendar" class="w-6 h-6" />
         <p class="font-bold text-md">
           {{ formatDate(article.date) }}
         </p>
       </div>
-      <div class="flex flex-row justify-center self-start gap-2 items-center">
+      <div
+        class="flex flex-row justify-center self-center sm:self-start gap-2 items-center"
+      >
         <Icon name="fa-solid:clock" class="w-6 h-6" />
         <p class="font-bold text-md">
           {{ article.readingTime.text }}
@@ -19,7 +23,7 @@
       </div>
       <div
         v-if="author"
-        class="flex flex-row justify-center self-start gap-2 items-center"
+        class="flex flex-row justify-center self-center sm:self-start ms-2 sm:ms-0 gap-2 items-center"
       >
         <img
           :src="author.avatar"
