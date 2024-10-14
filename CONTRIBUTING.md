@@ -11,12 +11,13 @@
 1. :heart: We love open source. We love the community and the potential for rapid, technical advancement. So making our code as open as possible just made sense.
 2. :eyes::bug: ["given enough eyeballs, all bugs are shallow"](http://www.catb.org/~esr/writings/cathedral-bazaar/). Whether ["Linus's Law"](https://en.wikipedia.org/wiki/Linus%27s_law) is strictly true or not, we believe in it. We don't want you or anyone else using a broken website and if it is broken then we believe a community of contributors _may_ find bugs quicker than our internal team. By making our code open we can speed up our bug fix rate.
 3. :earth_asia: Open-source is [environmentally friendly](https://www.oreilly.com/library/view/building-green-software/9781098150617/). Reusing code and not wasting developer time or computational resources on rewriting the same code is actually better for the environment.
+4. :game_die: It's fun for us! We love meeting new people, learning about who's using our software, and working with a diverse range of contributors.
 
-We are a for-profit company, motivated to create profit from our codebase, so we understand we have to _earn_ your trust. This is **our pledge to you**:
+We are a for-profit company, motivated to create profit from our codebase, so we understand we have to _earn_ your trust. This is our pledge to you:
 
-<div style="color:orange; padding: 0px 20px;">
-If you submit code under an open-source license, it will always and forever be open source. We we will never relicense open-source code you provide under a proprietary license. We will always consult our community about any changes to open-source licenses or community documentation such as our code of conduct.
-</div>
+> **The Codort Open Source Pledge**
+>
+> If you submit code under an open-source license, it will always and forever be open source. We we will never relicense open-source code you provide under a proprietary license. We will always consult our community about any changes to open-source licenses or community documentation such as our code of conduct.
 
 ### Why should someone contribute _for free_ to the code of a for-profit company?!
 
@@ -35,9 +36,9 @@ We are incredibly grateful for contributions in any form but gratitude won't get
 
 We have made a pledge to you and we ask for one in return. This is **your pledge to us**:
 
-<div style="color:#ff6045; padding: 0px 20px;">
-You will always adhere to our <a href="/CODE_OF_CONDUCT.md">code of conduct</a>. You will sign the developer certificate of origin for all commits that you make. You agree that if you violate our DCO then any associate commits will be removed and you will be permanently banned from contributing and from our Discord.
-</div>
+> **The Codort Contributor Pledge**
+>
+> I will always adhere to the Codort <a href="/CODE_OF_CONDUCT.md">code of conduct</a>. I will sign the developer certificate of origin for all commits that I make. I agree that if I violate the Codort DCO then any associated commits will be removed and I will be permanently banned from contributing to Codort and will further be banned from the Codort Discord.
 
 ## Developer Certificate of Origin
 
