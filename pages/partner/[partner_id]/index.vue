@@ -16,9 +16,4 @@
 useHead({
   title: 'Partner with us',
 });
-
-definePageMeta({
-  transparentHeader: true,
-  dark: false,
-});
 </script>

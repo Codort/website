@@ -2,12 +2,14 @@
 <template>
   <header class="sm:justify-start sm:flex-nowrap z-11 w-full">
     <nav
-      class="transition-colors fixed w-full z-10 top-0 pt-10 pb-5 px-2 sm:px-6 lg:px-10 bg-[#f0afae] dark:bg-[#080d17] bg-opacity-[0.97] dark:bg-opacity-[0.97]"
-      :class="{
-        'md:bg-transparent': isTransparent || $route.meta.transparentHeader,
-        'md:dark:bg-transparent':
-          isTransparent || $route.meta.transparentHeader,
-      }"
+      id="main-header"
+      class="transition-colors duration-500 fixed w-full z-10 top-0 pt-10 pb-5 px-2 sm:px-6 lg:px-10 bg-[#f0afae] dark:bg-[#080d17]"
+      :class="[
+        scrollPosition >= 100
+          ? 'opacity-90'
+          : 'bg-transparent dark:bg-transparent',
+        '',
+      ]"
     >
       <div class="">
         <div class="relative flex items-center justify-between h-12">
@@ -111,19 +113,24 @@ const mobileMenuOpen = ref(false);
 const colorMode = useColorMode();
 const isDark = ref(false);
 
+const scrollPosition = ref(0);
+
+function handleScroll() {
+  scrollPosition.value = window.scrollY;
+  console.log(scrollPosition.value);
+}
 onMounted(() => {
   isDark.value = colorMode.preference === 'dark';
+  scrollPosition.value = window.scrollY;
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
 });
 
 const toggleColourMode = () => {
   isDark.value = !isDark.value;
   colorMode.preference = isDark.value ? 'dark' : 'light';
 };
-
-defineProps({
-  isTransparent: {
-    type: Boolean,
-    default: false,
-  },
-});
 </script>

@@ -12,10 +12,8 @@
           Fed up of manually hacking tools together through CI/CD scripts? Fed
           up of not being able to use the latest AI-powered solution because
           it's not approved on your SCM's marketplace? Say hello to
-          <i>source code orchestration</i> and
-          <span class="border-b-2 border-coral">
-            code how <strong>you</strong> want </span
-          >. <br /><br />
+          <i>source code orchestration</i> and code how
+          <strong>you</strong> want. <br /><br />
 
           If these problems sound familiar,
           <a href="mailto:hello@codort.com">email us</a> or

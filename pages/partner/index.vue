@@ -45,10 +45,6 @@ function navigateToPartnership(id) {
 useHead({
   title: 'Partner with us',
 });
-
-definePageMeta({
-  transparentHeader: true,
-});
 </script>
 
 <style>

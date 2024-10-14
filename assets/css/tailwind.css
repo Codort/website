@@ -30,9 +30,11 @@
   .p,
   li,
   ul,
+  b,
+  .b,
   a,
   .a {
-    @apply text-black dark:text-white transition-colors ease-linear duration-300;
+    @apply transition-colors ease-linear duration-300;
   }
 
   h1,
@@ -47,6 +49,8 @@
   .h5,
   p,
   .p,
+  b,
+  .b,
   li,
   ul {
     @apply text-black dark:text-white;
@@ -78,7 +82,9 @@
   }
 
   p,
-  .p {
+  .p,
+  b,
+  .b {
     @apply text-base;
   }
 
@@ -119,11 +125,9 @@
 
   .button {
     position: relative;
-    width: 250px;
-    height: 50px;
     clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
     overflow: hidden;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-decoration: none;
     background-color: #e5fcf5;
     cursor: pointer;
@@ -167,6 +171,7 @@
     opacity: 0.6;
     pointer-events: none;
     mix-blend-mode: overlay;
+    z-index: -100;
   }
 
   footer a {
