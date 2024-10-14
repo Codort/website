@@ -1,3 +1,4 @@
+<!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
   <div class="w-full px-6 pt-10 sm:pt-0 sm:px-48">
     <h2 class="mt-24 md:p-4 text-4xl font-bold mb-8 text-center">

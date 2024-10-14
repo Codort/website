@@ -1,3 +1,4 @@
+<!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
   <div class="relative w-full flex flex-col items-center my-0 py-0 pt-10">
     <div class="grid grid-cols-1 sm:grid-cols-2 items-center">

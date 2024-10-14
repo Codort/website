@@ -1,5 +1,6 @@
+<!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
-  <div class="w-full h-full min-h-screen pt-[150px] sm:pt-[50px]">
+  <div class="w-full h-full min-h-screen pt-[150px] md:pt-[50px]">
     <div v-if="doc">
       <div v-if="doc.cover" class="md:flex justify-center mt-24 hidden">
         <img

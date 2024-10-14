@@ -1,4 +1,4 @@
-<!-- components/SlowRadialBlur.vue -->
+<!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
   <div ref="container" class="slow-radial-blur">
     <div

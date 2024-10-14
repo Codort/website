@@ -1,3 +1,4 @@
+<!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
   <header class="sm:justify-start sm:flex-nowrap z-11 w-full">
     <nav

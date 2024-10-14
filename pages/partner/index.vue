@@ -1,3 +1,4 @@
+<!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
   <div class="px-2 sm:px-6 lg:px-10">
     <div class="mt-36">
