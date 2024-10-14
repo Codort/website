@@ -16,7 +16,9 @@
         </div>
       </div>
       <div class="flex flex-col">
-        <h2 class="text-center self-center">Subscribe to our newsletter</h2>
+        <h2 class="pt-6 sm:pt-0 text-center self-center">
+          Subscribe to our newsletter
+        </h2>
         <NewsletterFormFull />
       </div>
     </div>

@@ -4,15 +4,15 @@
     class="mt-auto text-black dark:text-white pt-2 transition-colors z-50"
   >
     <div
-      class="w-full bg-[#c99696] dark:bg-[#060910] px-2 sm:px-6 lg:px-10 py-5 flex justify-between"
+      class="w-full bg-[#c99696] dark:bg-[#060910] px-2 sm:px-6 lg:px-10 py-5 sm:flex justify-between"
     >
-      <div>
-        <h2 class="pb-10">Codort</h2>
+      <div class="px-4 sm:px-0">
+        <h2 class="pb-4 sm:pb-10">Codort</h2>
         <b>Stay up to date</b>
         <p>Sign-up to our newsletter now to never miss an update.</p>
         <NewsletterFormShort />
       </div>
-      <div class="flex w-[50%] pt-2">
+      <div class="flex sm:w-[50%] pt-10 sm:pt-2">
         <ul class="flex w-full justify-between">
           <li v-for="item in menu" :key="item.path" class="flex-1 text-center">
             <NuxtLink :key="item.path" :to="item.path" class="no-underline">
@@ -24,7 +24,7 @@
     </div>
 
     <div
-      class="flex justify-between bg-[#f0afae] dark:bg-[#080d17] w-full px-2 sm:px-6 lg:px-10 py-3"
+      class="sm:flex justify-between bg-[#f0afae] dark:bg-[#080d17] w-full px-2 sm:px-6 lg:px-10 py-3"
     >
       <div class="inline mb-2 space-x-2 text-sm text-black dark:text-white">
         <p class="inline text-sm">
@@ -43,7 +43,7 @@
           <a href="https://github.com/bloggrify/bloggrify">Bloggrify</a>
         </p>
       </div>
-      <div class="flex flex-col items-end">
+      <div class="flex flex-col sm:items-end mt-3 sm:mt-0">
         <div class="flex space-x-4">
           <NuxtLink
             v-if="config.socials.github"
