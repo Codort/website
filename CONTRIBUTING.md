@@ -48,7 +48,21 @@ To sign the DCO, simply add `-s` after all commits that you make, to do this eas
 `$ git config --global alias.cos "commit -s"`
 
 Will allow you to write `git cos` which will automatically sign-off your commit.
-We have added a pre-commit hook that will amend the default sign-off to say:
+
+To explicitly sign the DCO we ask that you add the file `.git/hooks/commit-msg` with the following:
+
+```
+#!/bin/sh
+commit_msg_file="$1"
+if grep -q "^Signed-off-by: " "$commit_msg_file"; then
+    sed -i 's/^Signed-off-by: /DCO signed and agreed by: /' "$commit_msg_file"
+else
+    echo "Error: Commit message must contain a 'Signed-off-by' line."
+    exit 1
+fi
+```
+
+Which will sign your commits with:
 
 `DCO signed and agreed by: {your name} <{your email}>`
 
