@@ -4,10 +4,12 @@
     class="relative w-full flex flex-col items-center my-0 py-0 pt-[150px] sm:pt-0"
   >
     <div
-      class="flex flex-col items-center w-full max-w-5xl my-0 py-0 rounded-3xl ms-0 sm:ms-10"
+      class="flex flex-col items-center w-full sm:max-w-5xl my-0 py-0 ms-0 sm:ms-10"
     >
       <div class="">
-        <h1>Say hello to source code orchestration</h1>
+        <h1 class="text-5xl pb-4 sm:h1 sm:pb-0">
+          Say hello to source code orchestration
+        </h1>
         <p class="mt-2 text-2xl/[40px] text-left pe-6">
           Fed up of manually hacking tools together through CI/CD scripts? Fed
           up of not being able to use the latest AI-powered solution because
