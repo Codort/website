@@ -45,28 +45,10 @@ We have made a pledge to you and we ask for one in return. This is **your pledge
 All contributions to the Codort codebase must be signed-off to indicate you have read and agreed to the [Developer Certificate of Origin](https://developercertificate.org/) (DCO), which we have pasted below.
 To sign the DCO, simply add `-s` after all commits that you make, to do this easily you can make a git alias from the command line, for example:
 
-`$ git config --global alias.cos "commit -s"`
+`$ git --global alias.cos "commit -s"`
 
 Will allow you to write `git cos` which will automatically sign-off your commit.
-
-To explicitly sign the DCO we ask that you add the file `.git/hooks/commit-msg` with the following:
-
-```
-#!/bin/sh
-commit_msg_file="$1"
-if grep -q "^Signed-off-by: " "$commit_msg_file"; then
-    sed -i 's/^Signed-off-by: /DCO signed and agreed by: /' "$commit_msg_file"
-else
-    echo "Error: Commit message must contain a 'Signed-off-by' line."
-    exit 1
-fi
-```
-
-Which will sign your commits with:
-
-`DCO signed and agreed by: {your name} <{your email}>`
-
-In the near future we will add server-side push protections as well as better checks to prevent user spoofing user names and emails.
+By signing a commit you are agreeing to the DCO and agree that you will be banned from the Codort GitHub organisation and Discord server if you violate the DCO.
 
 We consider the following as violations to the DCO:
 
