@@ -52,11 +52,8 @@ By signing a commit you are agreeing to the DCO and agree that you will be banne
 
 We consider the following as violations to the DCO:
 
-1. Modifying the sign-off template above;
-2. Signing the DCO with a fake name or pseudonym, if you are registered on GitHub or another platform with a fake name then you will not be able to contribute to Codort before updating your name;
-3. Submitting a contribution that you did not have the right to submit whether due to licensing, copyright, or any other restrictions.
-
-Any deliberate violation will result in a ban from contributing to Codort and from our Discord.
+1. Signing the DCO with a fake name or pseudonym, if you are registered on GitHub or another platform with a fake name then you will not be able to contribute to Codort before updating your name;
+2. Submitting a contribution that you did not have the right to submit whether due to licensing, copyright, or any other restrictions.
 
 <details closed>
 <summary><b>Click to toggle DCO text</b></summary>
