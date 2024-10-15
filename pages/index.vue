@@ -1,16 +1,14 @@
 <!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
   <div
-    class="relative w-full flex flex-col items-center my-0 py-0 pt-[150px] sm:pt-0"
+    class="relative w-full flex flex-col items-center my-0 py-0 mt-[150px] sm:pt-0"
   >
     <div
       class="flex flex-col items-center w-full sm:max-w-5xl my-0 py-0 ms-0 sm:ms-10"
     >
       <div class="">
-        <h1 class="text-5xl pb-4 sm:h1 sm:pb-0">
-          Say hello to source code orchestration
-        </h1>
-        <p class="mt-2 text-2xl/[40px] text-left pe-6">
+        <h1 class="text-5xl sm:h1">Say hello to source code orchestration</h1>
+        <p class="mt-2 text-2xl/[40px] text-left pe-6 pt-4 sm:pt-0">
           Fed up of manually hacking tools together through CI/CD scripts? Fed
           up of not being able to use the latest AI-powered solution because
           it's not approved on your SCM's marketplace? Say hello to
@@ -28,7 +26,9 @@
         </p>
       </div>
 
-      <div class="flex gap-3 flex-col items-center sm:flex-row mt-10 mb-5 me-6">
+      <div
+        class="flex gap-3 flex-col items-center sm:flex-row mt-10 mb-5 pb-5 me-6"
+      >
         <a
           href="https://discord.com/invite/nnBHHbMr23"
           class="button flex items-center justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
@@ -48,18 +48,10 @@
           <Icon name="jam:linkedin" color="black" size="33px" class="mr-2" />
           <span class="text-lg">Follow our LinkedIn</span>
         </a>
-        <a
-          href="/contact"
-          class="button flex items-center justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
-        >
-          <Icon
-            name="ic:baseline-mail"
-            color="black"
-            size="33px"
-            class="mr-2"
-          />
-          <span class="text-lg">Join our mailing list</span>
-        </a>
+      </div>
+      <div class="flex flex-col self-start mt-20">
+        <h2 class="">Subscribe to our newsletter</h2>
+        <NewsletterFormShortWide class="py-5" />
       </div>
     </div>
   </div>
