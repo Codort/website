@@ -28,7 +28,7 @@ If you have frustrations with source code management you want to see solved, ple
 ## Contributing :heart:
 
 We invite you to contribute and help improve Codort.
-Before making any contributions please make sure you've read our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md).
+Before making any contributions please make sure you've read our [Code of Conduct](https://github.com/Codort/website/tree/main?tab=coc-ov-file#readme) and [Contributing Guidelines](CONTRIBUTING.md).
 
 There are many ways you can be involved whether you're an experienced developer or completely new to coding and/or open-source.
 You could:
