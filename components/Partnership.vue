@@ -7,7 +7,7 @@
     <p class="text-lg">{{ description }}</p>
     <p class="text-md pt-5 font-bold flex items-center">
       Find out more now
-      <fa icon="arrow-right" class="ps-2" />
+      <Icon name="fa-solid:arrow-right" class="ms-2" />
     </p>
   </div>
 </template>

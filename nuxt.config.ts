@@ -1,12 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@bloggrify/core'],
-  modules: [
-    '@nuxt/image',
-    '@nuxtjs/google-fonts',
-    '@vesp/nuxt-fontawesome',
-    '@nuxt/ui',
-  ],
+  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxt/ui'],
   colorMode: {
     preference: 'system',
     fallback: 'light',
@@ -21,12 +16,6 @@ export default defineNuxtConfig({
   },
   image: {
     format: ['webp'],
-  },
-  fontawesome: {
-    icons: {
-      solid: ['arrow-right'],
-    },
-    component: 'fa',
   },
   app: {
     head: {
