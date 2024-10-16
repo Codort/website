@@ -116,7 +116,6 @@ const scrollPosition = ref(0);
 
 function handleScroll() {
   scrollPosition.value = window.scrollY;
-  console.log(scrollPosition.value);
 }
 onMounted(() => {
   isDark.value = colorMode.preference === 'dark';
