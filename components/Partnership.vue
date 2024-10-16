@@ -6,7 +6,8 @@
     <h3 class="">{{ name }}</h3>
     <p class="text-lg">{{ description }}</p>
     <p class="text-md pt-5 font-bold flex items-center">
-      Find out more now <fa icon="arrow-right" class="ps-2" />
+      Find out more now
+      <fa icon="arrow-right" class="ps-2" />
     </p>
   </div>
 </template>

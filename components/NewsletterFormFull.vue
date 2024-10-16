@@ -20,8 +20,10 @@
           >
             <div class="mc-field-group">
               <label for="mce-EMAIL">
-                Email Address<span class="asterisk">*</span></label
-              ><br />
+                Email Address
+                <span class="asterisk">*</span>
+              </label>
+              <br />
               <input
                 id="mce-EMAIL"
                 type="email"
@@ -33,8 +35,8 @@
             </div>
             <div class="mc-field-group input-group p-3">
               <strong class="inline mr-2">
-                Are you interested in being a beta tester?</strong
-              >
+                Are you interested in being a beta tester?
+              </strong>
               <p class="inline">
                 Tick here to get early access to our platform.
               </p>
@@ -45,9 +47,8 @@
                     type="checkbox"
                     name="group[51289][1]"
                     value=""
-                  /><label for="mce-group[51289]-51289-0" class="p-5">
-                    Yes</label
-                  >
+                  />
+                  <label for="mce-group[51289]-51289-0" class="p-5">Yes</label>
                 </li>
               </ul>
               <span id="mce-group[51289]-HELPERTEXT" class="helper_text"></span>
@@ -63,10 +64,10 @@
                   <a
                     href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
                   >
-                    Privacy Policy</a
-                  >. You can unsubscribe at any time.<span class="asterisk">
-                    *</span
-                  >
+                    Privacy Policy
+                  </a>
+                  . You can unsubscribe at any time.
+                  <span class="asterisk">*</span>
                 </p>
                 <fieldset
                   class="mc_fieldset gdprRequired mc-field-group p-2"
@@ -80,8 +81,8 @@
                       class="gdpr"
                       value="Y"
                     />
-                    <span class="p-5">I agree</span></label
-                  >
+                    <span class="p-5">I agree</span>
+                  </label>
                 </fieldset>
                 <p></p>
               </div>

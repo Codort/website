@@ -13,16 +13,16 @@
           up of not being able to use the latest AI-powered solution because
           it's not approved on your SCM's marketplace? Say hello to
           <i>source code orchestration</i> and code how
-          <strong>you</strong> want. <br /><br />
+          <strong> you </strong> want.<br /><br />
 
           If these problems sound familiar,
-          <a href="mailto:hello@codort.com">email us</a> or
+          <a href="mailto:hello@codort.com"> email us </a> or
           <a href="https://calendar.app.google/CuPH2sRtvcajvXvn9">
-            set up a meeting</a
-          >
+            set up a meeting
+          </a>
           now. Join our
-          <a href="https://discord.com/invite/nnBHHbMr23">Discord</a> to take
-          part in the source code revolution.
+          <a href="https://discord.com/invite/nnBHHbMr23">Discord</a>
+          to take part in the source code revolution.
         </p>
       </div>
 

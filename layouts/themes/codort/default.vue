@@ -26,12 +26,12 @@
 
         <div class="flex items-center justify-center mb-6">
           <NuxtLink
-            v-for="tag in doc.tags"
-            :key="tag"
-            :to="`/tags/${tag}`"
+            v-for="this_tag in doc.tags"
+            :key="this_tag"
+            :to="`/tags/${this_tag}`"
             class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mx-2"
           >
-            {{ tag }}
+            {{ this_tag }}
           </NuxtLink>
         </div>
       </div>

@@ -32,8 +32,9 @@
         <a
           class="font-bold text-md"
           href="https://creativecommons.org/licenses/by/4.0/deed.en"
-          >CC BY 4.0</a
         >
+          CC BY 4.0
+        </a>
       </div>
       <div
         v-if="author"

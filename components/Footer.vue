@@ -31,10 +31,11 @@
           © Codort &#174; {{ new Date().getFullYear() }}
         </p>
         <span>•</span>
-        <a
-          href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
-          >Privacy Policy</a
-        >
+        <!-- prettier-ignore -->
+        <NuxtLink
+          to="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
+        >Privacy Policy
+        </NuxtLink>
         <span>•</span>
         <p class="inline text-sm">
           Powered by

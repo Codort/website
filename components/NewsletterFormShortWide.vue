@@ -80,15 +80,17 @@
                     class="gdpr"
                     value="Y"
                   />
-                  <span class="ms-1"
-                    >I agree to my data being processed in line with the Codort
+                  <span class="ms-1">
+                    I agree to my data being processed in line with the Codort
                     <a
                       href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
                     >
-                      Privacy Policy</a
-                    ><span class="asterisk">*</span>.</span
-                  ></label
-                >
+                      Privacy Policy
+                    </a>
+                    <span class="asterisk">*</span>
+                    .
+                  </span>
+                </label>
               </fieldset>
               <p></p>
             </div>

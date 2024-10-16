@@ -15,9 +15,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "lint": "yarn run lint:eslint && yarn run lint:prettier",
-    "lint:eslint": "eslint .",
-    "lint:prettier": "prettier . --check",
+    "lint": "yarn run eslint && yarn run prettier",
+    "eslint": "eslint .",
+    "prettier": "prettier . --check",
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
