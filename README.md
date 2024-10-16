@@ -40,8 +40,3 @@ You could:
 ❓ **Ask a question.** Unsure about how something works or need help to get started using or contributing to our code? Just post your question in [our Discord](https://discord.com/invite/nnBHHbMr23) and someone in our community will help you as soon as possible!
 
 💻**Write some code.** We are currently welcoming pull requests from contributors. If you've found a bug/issue and want to fix it yourself, please [open a pull request](https://github.com/Codort/website/pulls) with your change.
-
-
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-</details>
