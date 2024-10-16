@@ -66,13 +66,3 @@ definePageMeta({
   layout: 'hero',
 });
 </script>
-
-<style>
-a {
-  text-decoration: underline;
-}
-
-header a {
-  text-decoration: none;
-}
-</style>
