@@ -104,7 +104,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { loadIcons } from '@iconify/vue';
 
 const config: any = useAppConfig();
 const menu = config.menu;

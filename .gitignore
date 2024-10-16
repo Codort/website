@@ -1,11 +1,28 @@
-node_modules
-*.log*
-.nuxt
-.idea
-.nitro
-.cache
+.vscode
+.all-contributorsrc
+CNAME
+
+# Nuxt dev/build outputs
 .output
 .data
-.env
+.nuxt
+.nitro
+.cache
 dist
-.vscode
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
