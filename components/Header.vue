@@ -57,22 +57,16 @@
               <div class="flex items-center justify-end pb-3 sm:pb-2">
                 <ColorScheme placeholder="" tag="span">
                   <UButton
-                    v-show="isDark"
-                    icon="i-fa-moon-o"
-                    variant="ghost"
-                    class="text-black dark:text-white"
-                    aria-label="Change colour mode"
-                    @click="toggleColourMode"
-                  ></UButton>
-                  <UButton
-                    v-show="!isDark"
-                    icon="i-fa-sun-o"
+                    v-model="isDark"
+                    :icon="isDark ? 'i-fa-moon-o' : 'i-fa-sun-o'"
                     variant="ghost"
                     class="text-black dark:text-white"
                     aria-label="Change colour mode"
                     @click="toggleColourMode"
                   ></UButton>
                 </ColorScheme>
+                <Icon name="fa:sun-o" class="w-0 h-0"></Icon>
+                <Icon name="fa:moon-o" class="w-0 h-0"></Icon>
               </div>
             </div>
             <div class="hidden sm:block left-0 font-mark pb-6">
