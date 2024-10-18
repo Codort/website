@@ -15,8 +15,8 @@ jobs:
         with:
           node-version: '20'
       # Pick your own package manager and build script
-      - run: yarn
-      - run: yarn dlx nuxt build --preset github_pages
+      - run: yarn install --frozen-lockfile
+      - run: yarn nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
