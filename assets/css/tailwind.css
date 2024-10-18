@@ -100,10 +100,6 @@
     @apply h3;
   }
 
-  .prose a {
-    @apply a;
-  }
-
   a,
   .a {
     @apply text-gray-600 hover:text-black dark:text-[#c7c7bf] dark:hover:text-black;
@@ -182,12 +178,11 @@
     @apply no-underline text-black visited:text-black hover:text-black;
   }
 
-  .bloglist a,
-  .taglist a {
-    @apply no-underline text-black hover:text-gray-600 visited:text-black;
+  .tag {
+    @apply bg-coral rounded-full px-2 py-1 text-xs font-bold text-gray-700 m-1.5 no-underline;
   }
 
-  .taglist a {
-    @apply hover:text-gray-400;
+  .bloglist a {
+    @apply no-underline;
   }
 }

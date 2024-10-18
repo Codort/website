@@ -4,11 +4,10 @@ title: 'Hey World'
 description: "Codort's first blog, with many more to come."
 date: '2024-07-26'
 cover: 'covers/cody.png'
+author: 'rsonabend1'
 tags:
   - 'intro'
-hidden: false
 draft: false
-listed: true
 ---
 
 ### Open != Stealth

@@ -58,5 +58,14 @@ const props = defineProps<{
   article: any;
 }>();
 
-const author = findAuthor(props.article.author);
+const authors = useAppConfig().authors;
+
+let author;
+if (props.article.author === undefined) {
+  author = authors.filter((author) => author.default)[0];
+} else {
+  author = authors.filter(
+    (author) => author.username == props.article.author,
+  )[0];
+}
 </script>

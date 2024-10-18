@@ -1,3 +1,4 @@
+<!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
   <div id="mc_embed_shell" class="p-0 rounded-lg">
     <div id="mc_embed_signup">

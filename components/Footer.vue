@@ -32,16 +32,13 @@
         </p>
         <span>•</span>
         <!-- prettier-ignore -->
-        <NuxtLink
+        <a
           to="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
-        >Privacy Policy
-        </NuxtLink>
+        >Privacy Policy</a>
         <span>•</span>
         <p class="inline text-sm">
           Powered by
           <a href="https://nuxt.com/">Nuxt</a>
-          and
-          <a href="https://github.com/bloggrify/bloggrify">Bloggrify</a>
         </p>
       </div>
       <div class="flex flex-col sm:items-end mt-3 sm:mt-0">

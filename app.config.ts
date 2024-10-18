@@ -27,10 +27,10 @@ export default defineAppConfig({
     },
   ],
 
-  menu: () => [
+  menu: [
     { name: 'Home', path: '/' },
     { name: 'Partner', path: '/partner' },
-    { name: 'Articles', path: '/archives' },
+    { name: 'Articles', path: '/articles' },
     { name: 'Contact', path: '/contact' },
   ],
 });
