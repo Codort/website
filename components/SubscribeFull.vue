@@ -2,20 +2,20 @@
 <template>
   <div
     id="mc_embed_shell"
-    class="ms-7 p-0 sm:p-5 rounded-lg pb-10 sm:py-3 max-w-3xl sm:mt-[100px] md:mt-0 flex items-center justify-center align-middle"
+    class="ms-7 p-0 sm:px-5 rounded-lg flex items-center justify-center align-middle"
   >
     <div id="mc_embed_signup">
       <form
         id="mc-embedded-subscribe-form"
-        action="https://codort.us14.list-manage.com/subscribe/post?u=1ace6638ad702b3ee9eb639b1&amp;id=6e0c8184b8&amp;v_id=4921&amp;f_id=00ceb7e5f0"
+        :action="formDetails.actionLink"
         method="post"
-        name="mc-embedded-subscrie-form"
+        name="mc-embedded-subscribe-form"
         class="validate"
         target="_self"
         novalidate=""
       >
         <div id="mc_embed_signup_scroll p-0 sm:px-5">
-          <p class="text-md p-0 pt-3 sm:p-7 text-center"></p>
+          <p class="text-md p-0 pt-3 text-center"></p>
           <div
             class="flex flex-col justify-center align-middle self-center mx-auto w-100 sm:w-[70%]"
           >
@@ -34,7 +34,7 @@
                 value=""
               />
             </div>
-            <div class="mc-field-group input-group p-3">
+            <div v-if="props.beta" class="mc-field-group input-group p-3">
               <strong class="inline mr-2">
                 Are you interested in being a beta tester?
               </strong>
@@ -60,8 +60,8 @@
             >
               <div class="content__gdpr p-3">
                 <p>
-                  By signing up to our mailing list you agree to your data being
-                  processed in line with our
+                  By signing up you agree to your data being processed in line
+                  with our
                   <a
                     href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
                   >
@@ -89,7 +89,7 @@
               </div>
             </div>
             <div hidden="">
-              <input type="hidden" name="tags" value="40181567" />
+              <input type="hidden" name="tags" :value="formDetails.tagIds" />
             </div>
             <div id="mce-responses" class="clear foot">
               <div
@@ -130,3 +130,20 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+const props = defineProps({
+  formName: {
+    type: String,
+    default: 'newsletter',
+    validator: (prop: string) =>
+      ['newsletter', 'adopter', 'partner'].includes(prop),
+  },
+  beta: {
+    type: Boolean,
+    default: true,
+  },
+});
+
+const formDetails = newsletterDetails(props.formName);
+</script>

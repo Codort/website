@@ -4,9 +4,9 @@
     <div id="mc_embed_signup">
       <form
         id="mc-embedded-subscribe-form"
-        action="https://codort.us14.list-manage.com/subscribe/post?u=1ace6638ad702b3ee9eb639b1&amp;id=6e0c8184b8&amp;v_id=4921&amp;f_id=00ceb7e5f0"
+        :action="formDetails.actionLink"
         method="post"
-        name="mc-embedded-subscrie-form"
+        name="mc-embedded-subscribe-form"
         class="validate"
         target="_self"
         novalidate=""
@@ -26,7 +26,7 @@
             </div>
 
             <div hidden="">
-              <input type="hidden" name="tags" value="40181567" />
+              <input type="hidden" name="tags" :value="formDetails.tagIds" />
             </div>
             <div id="mce-responses" class="clear foot">
               <div
@@ -101,3 +101,16 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+const props = defineProps({
+  formName: {
+    type: String,
+    default: 'newsletter',
+    validator: (prop: string) =>
+      ['newsletter', 'adopter', 'partner'].includes(prop),
+  },
+});
+
+const formDetails = newsletterDetails(props.formName);
+</script>

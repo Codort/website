@@ -16,10 +16,12 @@
         </div>
       </div>
       <div class="flex flex-col">
-        <h2 class="pt-6 sm:pt-0 text-center self-center">
+        <h2
+          class="pt-6 sm:pt-0 self-center sm:mb-[100px] md:mb-0 pb-10 sm:py-7 ms-6 sm:ms-0"
+        >
           Subscribe to our newsletter
         </h2>
-        <NewsletterFormFull />
+        <SubscribeFull />
       </div>
     </div>
   </div>

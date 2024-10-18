@@ -30,6 +30,7 @@ export default defineAppConfig({
   menu: [
     { name: 'Home', path: '/' },
     { name: 'Partner', path: '/partner' },
+    { name: 'Pricing', path: '/pricing' },
     { name: 'Articles', path: '/articles' },
     { name: 'Contact', path: '/contact' },
   ],

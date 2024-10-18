@@ -5,10 +5,10 @@
   >
     <h3 class="">{{ name }}</h3>
     <p class="text-lg">{{ description }}</p>
-    <p class="text-md pt-5 font-bold flex items-center">
+    <!-- <p class="text-md pt-5 font-bold flex items-center">
       Find out more now
       <Icon name="fa-solid:arrow-right" class="ms-2" />
-    </p>
+    </p> -->
   </div>
 </template>
 

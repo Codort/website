@@ -51,7 +51,7 @@
       </div>
       <div class="flex flex-col self-start mt-20">
         <h2 class="">Subscribe to our newsletter</h2>
-        <NewsletterFormShortWide class="py-5" />
+        <SubscribeWide class="py-5" />
       </div>
     </div>
   </div>

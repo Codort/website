@@ -10,7 +10,7 @@
         <h2 class="pb-4 sm:pb-10">Codort</h2>
         <b>Stay up to date</b>
         <p>Sign-up to our newsletter now to never miss an update.</p>
-        <NewsletterFormShortLong />
+        <SubscribeShort />
       </div>
       <div class="flex sm:w-[50%] pt-10 sm:pt-2">
         <ul class="flex w-full justify-between">

@@ -4,7 +4,7 @@
     class="flex flex-col min-h-screen min-w-screen w-full bg-gradient-light dark:bg-gradient-dark m-0 h-full"
   >
     <Header />
-    <main class="flex-grow flex min-h-screen">
+    <main class="flex-grow flex min-h-screen px-2 sm:px-6 lg:px-10 mt-36">
       <slot />
     </main>
     <Footer />

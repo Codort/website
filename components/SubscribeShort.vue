@@ -4,15 +4,14 @@
     <div id="mc_embed_signup">
       <form
         id="mc-embedded-subscribe-form"
-        action="https://codort.us14.list-manage.com/subscribe/post?u=1ace6638ad702b3ee9eb639b1&amp;id=6e0c8184b8&amp;v_id=4921&amp;f_id=00ceb7e5f0"
+        :action="formDetails.actionLink"
         method="post"
-        name="mc-embedded-subscrie-form"
+        name="mc-embedded-subscribe-form"
         class="validate"
         target="_self"
         novalidate=""
       >
         <div id="mc_embed_signup_scroll p-0">
-          <p class="text-md pt-2 p-0"></p>
           <div class="flex flex-col w-100 sm:w-[70%]">
             <div class="mc-field-group justify-start">
               <input
@@ -57,7 +56,7 @@
               </div>
             </div>
             <div hidden="">
-              <input type="hidden" name="tags" value="40181567" />
+              <input type="hidden" name="tags" :value="formDetails.tagIds" />
             </div>
             <div id="mce-responses" class="clear foot">
               <div
@@ -82,7 +81,7 @@
               />
             </div>
             <div
-              class="border-black dark:border-white border-2 sm:border-opacity-0 sm:dark:border-opacity-0 hover:border-opacity-100 transition-all duration-300 rounded-md self-start"
+              class="border-black dark:border-white border-2 border-opacity-100 sm:border-opacity-0 sm:dark:border-opacity-0 hover:border-opacity-100 dark:hover:border-opacity-100 transition-all duration-300 rounded-md self-start"
             >
               <button
                 id="mc-embedded-subscribe"
@@ -100,3 +99,16 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+const props = defineProps({
+  formName: {
+    type: String,
+    default: 'newsletter',
+    validator: (prop: string) =>
+      ['newsletter', 'adopter', 'partner'].includes(prop),
+  },
+});
+
+const formDetails = newsletterDetails(props.formName);
+</script>
