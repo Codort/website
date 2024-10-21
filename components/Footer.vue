@@ -30,12 +30,12 @@
         <p class="inline text-sm">
           © Codort &#174; {{ new Date().getFullYear() }}
         </p>
-        <span>•</span>
+        <span class="hex" />
         <!-- prettier-ignore -->
         <a
           to="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
         >Privacy Policy</a>
-        <span>•</span>
+        <span class="hex" />
         <p class="inline text-sm">
           Powered by
           <a href="https://nuxt.com/">Nuxt</a>
@@ -83,5 +83,9 @@ const menu = config.menu;
 
 .opaque {
   background: #1b2629;
+}
+
+ul li::before {
+  content: none;
 }
 </style>

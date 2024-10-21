@@ -4,7 +4,7 @@ module.exports = {
   rules: {
     // Global
     semi: ['error', 'always'],
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', 'avoidEscape', 'true'],
     'quote-props': ['error', 'as-needed'],
     'no-lonely-if': 'error',
     // Vue
