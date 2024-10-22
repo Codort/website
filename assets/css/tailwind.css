@@ -102,7 +102,7 @@
 
   a,
   .a {
-    @apply text-gray-600 hover:text-black dark:text-[#c7c7bf] dark:hover:text-black;
+    @apply font-semibold text-gray-600 hover:text-black dark:text-[#c7c7bf] dark:hover:text-black;
   }
 
   .asterisk {
@@ -168,6 +168,15 @@
     pointer-events: none;
     mix-blend-mode: overlay;
     z-index: -100;
+  }
+
+  .hex-img {
+    filter: url(~/assets/svgs/hexagon-container.svg#round);
+  }
+
+  .hex-img img {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+    @apply object-cover h-auto aspect-[11/10];
   }
 
   footer a {
