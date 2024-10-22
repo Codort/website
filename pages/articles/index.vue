@@ -1,12 +1,19 @@
 <!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
-  <div class="w-full px-6 pt-10 sm:pt-0 sm:px-48">
-    <h2 class="mt-24 md:p-4 text-4xl font-bold mb-8 text-center">
-      Codort Articles
-    </h2>
-    <ArticleList />
+  <div class="w-full">
+    <div class="pb-20">
+      <h1 class="pb-5">Articles</h1>
+      <ArticleList />
+    </div>
+    <div class="flex flex-col self-center items-center">
+      <h2 class="pb-0">Subscribe to our newsletter and never miss an update.</h2>
+      <SubscribeFull :beta="false" />
+    </div>
   </div>
 </template>
+
+
+
 <script setup lang="ts">
 useHead({
   title: 'Articles',
