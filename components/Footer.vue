@@ -51,7 +51,7 @@
               :to="social.url"
             >
               <span class="sr-only">{{ social.name }}</span>
-              <Icon :name="`fa6-brands:${social.name}`" class="text-xl"></Icon>
+              <Icon :name="social.icon" class="text-xl"></Icon>
             </NuxtLink>
           </div>
         </div>
