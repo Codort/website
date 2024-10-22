@@ -3,13 +3,13 @@ export default defineAppConfig({
 
   url: 'https://codort.com/',
 
-  socials: {
-    linkedin: 'https://www.linkedin.com/company/codort/',
-    github: 'https://github.com/codort',
-  },
-
-  // blog theme
-  theme: 'codort',
+  socials: [
+    { name: 'email', icon: 'fa:envelope', url: 'mailto:hello@codort.com' },
+    { name: 'discord', icon:'fa6-brands:discord', url: 'https://discord.com/invite/nnBHHbMr23' },
+    { name: 'linkedin', icon:'fa6-brands:linkedin', url: 'https://www.linkedin.com/company/codort/' },
+    { name: 'github', icon:'fa6-brands:github', url: 'https://github.com/codort' },
+    { name: 'bluesky', icon:'fa6-brands:bluesky', url: 'https://bsky.app/profile/codort.bsky.social' },
+  ],
 
   // the list of authors
   // the default author will be used for all posts if no author is specified

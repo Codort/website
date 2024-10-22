@@ -201,6 +201,15 @@
     z-index: -100;
   }
 
+  .hex-img {
+    filter: url(~/assets/svgs/hexagon-container.svg#round);
+  }
+
+  .hex-img img {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+    @apply object-cover h-auto aspect-[11/10];
+  }
+
   footer a {
     @apply underline;
   }

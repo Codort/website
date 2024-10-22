@@ -43,28 +43,17 @@
       </div>
       <div class="flex flex-col sm:items-end mt-3 sm:mt-0">
         <div class="flex space-x-4">
-          <NuxtLink
-            v-if="config.socials.github"
-            aria-label="Our GitHub"
-            class="text-sm a transition"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            :to="config.socials.github"
-          >
-            <span class="sr-only">github</span>
-            <Icon name="fa:github" class="text-xl"></Icon>
-          </NuxtLink>
-          <NuxtLink
-            v-if="config.socials.linkedin"
-            aria-label="Our LinkedIn"
-            class="text-sm a transition"
-            target="_blank"
-            rel="noopener noreferrer"
-            :to="config.socials.linkedin"
-          >
-            <span class="sr-only">Linkedin</span>
-            <Icon name="fa:linkedin" class="text-xl"></Icon>
-          </NuxtLink>
+          <div v-for="social in config.socials" :key="social.name">
+            <NuxtLink
+              :aria-label="`Our ${social.name}`"
+              class="text-sm a transition"
+              target="_blank"
+              :to="social.url"
+            >
+              <span class="sr-only">{{ social.name }}</span>
+              <Icon :name="social.icon" class="text-xl"></Icon>
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </div>
