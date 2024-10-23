@@ -5,6 +5,7 @@ export default defineAppConfig({
 
   socials: [
     { name: 'email', icon: 'fa:envelope', url: 'mailto:hello@codort.com' },
+    { name: 'newsletter', icon: 'fa-solid:newspaper', url: 'https://go.codort.com/newsletter' },
     { name: 'discord', icon:'fa6-brands:discord', url: 'https://discord.com/invite/nnBHHbMr23' },
     { name: 'linkedin', icon:'fa6-brands:linkedin', url: 'https://www.linkedin.com/company/codort/' },
     { name: 'github', icon:'fa6-brands:github', url: 'https://github.com/codort' },
