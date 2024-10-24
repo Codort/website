@@ -53,32 +53,55 @@
   .b,
   li,
   ul {
-    @apply text-black dark:text-white;
+    @apply text-black dark:text-white no-underline;
+  }
+
+  ul,
+  li {
+    @apply font-medium;
+  }
+
+  li {
+    @apply mb-[0.5rem];
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li::before {
+    content: '';
+    display: inline-block;
+    width: 0.77em;
+    height: 0.7em;
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    margin-right: 0.5em;
+    @apply bg-gradient-dark-two dark:bg-gradient-light-two;
   }
 
   h1,
   .h1 {
-    @apply text-6xl font-bold;
+    @apply text-6xl;
   }
 
   h2,
   .h2 {
-    @apply text-3xl font-semibold;
+    @apply text-3xl;
   }
 
   h3,
   .h3 {
-    @apply text-2xl font-semibold;
+    @apply text-2xl;
   }
 
   h4,
   .h4 {
-    @apply text-xl font-semibold;
+    @apply text-xl;
   }
 
   h5,
   .h5 {
-    @apply text-lg font-semibold;
+    @apply text-lg;
   }
 
   p,
@@ -102,7 +125,7 @@
 
   a,
   .a {
-    @apply font-semibold text-gray-600 hover:text-black dark:text-[#c7c7bf] dark:hover:text-black;
+    @apply text-gray-600 hover:text-black dark:text-[#c7c7bf] dark:hover:text-black font-semibold cursor-pointer;
   }
 
   .asterisk {
@@ -157,6 +180,14 @@
     );
   }
 
+  .bg-gradient-light-two {
+    background: linear-gradient(to right bottom, #ff9103, #f4b5d0 80%);
+  }
+
+  .bg-gradient-dark-two {
+    background: linear-gradient(to right bottom, #ffffff, #142038 60%);
+  }
+
   .noise-overlay {
     position: absolute;
     top: 0;
@@ -193,5 +224,13 @@
 
   .bloglist a {
     @apply no-underline;
+  }
+
+  .hex {
+    content: '';
+    width: 0.66em;
+    height: 0.6em;
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    @apply bg-gradient-dark-two dark:bg-gradient-light-two mx-[0.5em] inline-block;
   }
 }

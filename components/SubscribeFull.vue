@@ -147,3 +147,9 @@ const props = defineProps({
 
 const formDetails = newsletterDetails(props.formName);
 </script>
+
+<style lang="scss" scoped>
+ul li::before {
+  content: none;
+}
+</style>

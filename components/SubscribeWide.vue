@@ -11,8 +11,8 @@
         target="_self"
         novalidate=""
       >
-        <div id="mc_embed_signup_scroll p-0">
-          <div class="flex align-middle items-center">
+        <div id="mc_embed_signup_scroll p-0" class="flex flex-col">
+          <div class="flex align-middle items-center self-center">
             <div class="mc-field-group self-center">
               <input
                 id="mce-EMAIL"
@@ -51,7 +51,7 @@
               />
             </div>
             <div
-              class="border-black dark:border-white border-2 hover:border-gray-600 transition-all duration-300 rounded-md self-center"
+              class="border-black dark:border-white border-2 hover:border-coral hover:dark:border-coral transition-all duration-300 rounded-md self-center"
             >
               <button
                 id="mc-embedded-subscribe"
@@ -60,7 +60,12 @@
                 class="inline-flex items-center m-0 p-0 px-2 h-[2.5rem]"
               >
                 <Icon name="ic:email" color="black" size="20px" />
-                <span class="ps-2">Subscribe</span>
+                <span v-if="formName === 'newsletter'" class="ps-2"
+                  >Subscribe to our newsletter</span
+                >
+                <span v-if="formName === 'adopter'" class="ps-2"
+                  >Become an early adopter</span
+                >
               </button>
             </div>
           </div>

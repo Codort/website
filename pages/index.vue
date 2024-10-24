@@ -1,58 +1,54 @@
 <!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
   <div
-    class="relative w-full flex flex-col items-center my-0 py-0 mt-[150px] sm:pt-0"
+    class="relative w-full flex flex-col items-center my-0 py-0 mt-[400px] sm:pt-0"
   >
+    <h1>Say hello to source code orchestation</h1>
+    <h2>
+      Code how <span class="text-coral">you</span> want and leave the
+      integrations to us.
+    </h2>
     <div
-      class="flex flex-col items-center w-full sm:max-w-5xl my-0 py-0 ms-0 sm:ms-10"
+      class="flex gap-3 flex-col items-center sm:flex-row mt-10 mb-5 pb-5 me-6"
     >
-      <div class="">
-        <h1 class="text-5xl sm:h1">Say hello to source code orchestration</h1>
-        <p class="mt-2 text-2xl/[40px] text-left pe-6 pt-4 sm:pt-0">
-          Fed up of manually hacking tools together through CI/CD scripts? Fed
-          up of not being able to use the latest AI-powered solution because
-          it's not approved on your SCM's marketplace? Say hello to
-          <i>source code orchestration</i> and code how
-          <strong> you </strong> want.<br /><br />
-
-          If these problems sound familiar,
-          <a href="mailto:hello@codort.com"> email us </a> or
-          <a href="https://calendar.app.google/CuPH2sRtvcajvXvn9">
-            set up a meeting
-          </a>
-          now. Join our
-          <a href="https://discord.com/invite/nnBHHbMr23">Discord</a>
-          to take part in the source code revolution.
-        </p>
-      </div>
-
-      <div
-        class="flex gap-3 flex-col items-center sm:flex-row mt-10 mb-5 pb-5 me-6"
+      <a
+        href="https://calendar.app.google/CuPH2sRtvcajvXvn9"
+        class="button flex items-center justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
       >
-        <a
-          href="https://discord.com/invite/nnBHHbMr23"
-          class="button flex items-center justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
-        >
-          <Icon
-            name="ic:baseline-discord"
-            color="black"
-            size="33px"
-            class="mr-2"
-          />
-          <span class="text-lg">Join our Discord</span>
-        </a>
-        <a
-          href="https://www.linkedin.com/company/codort/"
-          class="button flex items-center justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
-        >
-          <Icon name="jam:linkedin" color="black" size="33px" class="mr-2" />
-          <span class="text-lg">Follow our LinkedIn</span>
-        </a>
-      </div>
-      <div class="flex flex-col self-start mt-20">
-        <h2 class="">Subscribe to our newsletter</h2>
-        <SubscribeWide class="py-5" />
-      </div>
+        <Icon name="fa:phone" color="black" size="33px" class="mr-2" />
+        <span class="text-lg">Book a call</span>
+      </a>
+      <a
+        href="https://discord.com/invite/nnBHHbMr23"
+        class="button flex items-center justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
+      >
+        <Icon
+          name="ic:baseline-discord"
+          color="black"
+          size="33px"
+          class="mr-2"
+        />
+        <span class="text-lg">Join our Discord</span>
+      </a>
+      <a
+        href="https://www.linkedin.com/company/codort/"
+        class="button flex items-center justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
+      >
+        <Icon name="jam:linkedin" color="black" size="33px" class="mr-2" />
+        <span class="text-lg">Follow our LinkedIn</span>
+      </a>
+    </div>
+    <div class="flex flex-col items-center mb-10">
+      <SubscribeWide class="py-5" />
+    </div>
+    <div>
+      <HeroBannerList
+        heading="Get to know source code orchestration"
+        hero="sco"
+      />
+    </div>
+    <div class="flex flex-col items-center mb-10">
+      <SubscribeWide class="py-5" formName="adopter" />
     </div>
   </div>
 </template>

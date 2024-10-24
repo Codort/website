@@ -7,7 +7,7 @@
       class="w-full bg-[#c99696] dark:bg-[#060910] px-2 sm:px-6 lg:px-10 py-5 sm:flex justify-between"
     >
       <div class="px-4 sm:px-0">
-        <h2 class="pb-4 sm:pb-10">Codort</h2>
+        <NuxtLink to='/'  class="pb-4 sm:pb-10 h2 block">Codort</NuxtLink>
         <b>Stay up to date</b>
         <p>Sign-up to our newsletter now to never miss an update.</p>
         <SubscribeShort />
@@ -30,12 +30,12 @@
         <p class="inline text-sm">
           © Codort &#174; {{ new Date().getFullYear() }}
         </p>
-        <span>•</span>
+        <span class="hex" />
         <!-- prettier-ignore -->
         <a
           to="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
         >Privacy Policy</a>
-        <span>•</span>
+        <span class="hex" />
         <p class="inline text-sm">
           Powered by
           <a href="https://nuxt.com/">Nuxt</a>
@@ -72,5 +72,9 @@ const menu = config.menu;
 
 .opaque {
   background: #1b2629;
+}
+
+ul li::before {
+  content: none;
 }
 </style>
