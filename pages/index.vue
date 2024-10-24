@@ -12,7 +12,7 @@
       class="flex gap-3 flex-col items-center sm:flex-row mt-10 mb-5 pb-5 me-6"
     >
       <a
-        href="https://calendar.app.google/CuPH2sRtvcajvXvn9"
+        href="https://calendar.app.google/o3Xu68vocUKsozVS6"
         class="button flex items-left justify-left gap-4 sm:gap-0 sm:justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
       >
         <Icon name="fa:phone" color="black" size="33px" class="mr-2" />
