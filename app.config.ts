@@ -11,9 +11,6 @@ export default defineAppConfig({
     { name: 'bluesky', icon:'fa6-brands:bluesky', url: 'https://bsky.app/profile/codort.bsky.social' },
   ],
 
-  // the list of authors
-  // the default author will be used for all posts if no author is specified
-  // and the mistral theme use the default author for the main page
   authors: [
     {
       username: 'rsonabend1',
@@ -28,7 +25,7 @@ export default defineAppConfig({
   ],
 
   menu: [
-    { name: 'Home', path: '/' },
+    { name: 'Marketplace', path: 'https://marketplace.codort.com' },
     { name: 'Partner', path: '/partner' },
     { name: 'Pricing', path: '/pricing' },
     { name: 'Articles', path: '/articles' },

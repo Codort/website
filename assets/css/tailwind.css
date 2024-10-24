@@ -53,7 +53,7 @@
   .b,
   li,
   ul {
-    @apply text-black dark:text-white;
+    @apply text-black dark:text-white no-underline;
   }
 
   ul,
@@ -125,7 +125,7 @@
 
   a,
   .a {
-    @apply text-gray-600 hover:text-black dark:text-[#c7c7bf] dark:hover:text-black font-semibold;
+    @apply text-gray-600 hover:text-black dark:text-[#c7c7bf] dark:hover:text-black font-semibold cursor-pointer;
   }
 
   .asterisk {

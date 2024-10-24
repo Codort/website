@@ -43,10 +43,9 @@
     </div>
     <div>
       <HeroBannerList
-        heading="Getting to know source code orchestration"
+        heading="Get to know source code orchestration"
         hero="sco"
       />
-      <HeroBannerList heading="Discover the marketplace" hero="market" />
     </div>
     <div class="flex flex-col items-center mb-10">
       <SubscribeWide class="py-5" formName="adopter" />

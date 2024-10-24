@@ -11,8 +11,8 @@
         v-html="description"
       ></p>
     </div>
-    <div class="w-[50%]">
-      <NuxtImg v-if="image" :src="`/images/heroes/${image}`" height="200" />
+    <div class="w-[50%] flex justify-center">
+      <NuxtImg v-if="image" :src="`/images/heroes/${image}`" height="250" />
       <div v-if="image_alt" v-html="image_alt" class="text-xl"></div>
     </div>
   </div>
