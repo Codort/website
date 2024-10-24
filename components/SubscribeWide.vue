@@ -12,8 +12,8 @@
         novalidate=""
       >
         <div id="mc_embed_signup_scroll p-0" class="flex flex-col">
-          <div class="flex align-middle items-center self-center">
-            <div class="mc-field-group self-center">
+          <div class="block sm:flex align-middle items-center self-center">
+            <div class="mc-field-group self-center pb-4 sm:pb-0">
               <input
                 id="mce-EMAIL"
                 type="email"

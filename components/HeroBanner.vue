@@ -1,9 +1,9 @@
 <!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
   <div
-    class="flex mb-[50px] items-center bg-opacity-30 w-full p-20 gap-10 rounded-lg"
+    class="sm:flex mb-[50px] items-center bg-opacity-30 w-full p-5 sm:p-20 gap-10 rounded-lg"
   >
-    <div class="flex-1">
+    <div class="sm:flex-1">
       <h2 v-if="subheading" class="text-2xl">{{ subheading }}</h2>
       <h1 class="text-3xl">{{ heading }}</h1>
       <p
@@ -11,7 +11,7 @@
         v-html="description"
       ></p>
     </div>
-    <div class="w-[50%] flex justify-center">
+    <div class="sm:w-[50%] flex justify-center">
       <NuxtImg v-if="image" :src="`/images/heroes/${image}`" height="250" />
       <div v-if="image_alt" v-html="image_alt" class="text-xl"></div>
     </div>

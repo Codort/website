@@ -2,7 +2,7 @@
   <div>
     <div class="flex flex-col items-center w-full my-0 py-0">
       <h2 class="pb-10">{{ heading }}</h2>
-      <div class="w-full px-10">
+      <div class="w-full sm:px-10">
         <div
           v-for="(hero, index) in this_hero"
           :key="hero.heading"
