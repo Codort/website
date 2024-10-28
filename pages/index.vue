@@ -3,7 +3,7 @@
   <div
     class="relative w-full flex flex-col items-center my-0 py-0 mt-[150px] sm:mt-[400px] sm:pt-0"
   >
-    <h1 class="text-center">Say hello to source code orchestation</h1>
+    <h1 class="text-center">Say hello to source code orchestration</h1>
     <h2>
       Code how <span class="text-coral">you</span> want and leave the
       integrations to us.
