@@ -42,20 +42,25 @@
           <div
             class="items-start justify-start sm:items-stretch sm:justify-start w-[100%]"
           >
-          <!-- above bar -->
+            <!-- above bar -->
             <div
               class="flex justify-between items-center sm:border-b-2 border-black dark:border-white w-[100%]"
             >
-            <!-- logo -->
+              <!-- logo -->
               <div class="hover:text-gray-900 ps-6 sm:ps-0">
                 <nuxt-link
                   class="dark:text-white dark:hover:text-slate-400"
                   to="/"
                 >
-                <NuxtImg
-                  :src="isDark ? '/images/logo_white.png' : '/images/logo_black.png'"
-                  alt="Codort"
-                  class="h-[70px]" />
+                  <NuxtImg
+                    :src="
+                      isDark
+                        ? '/images/logo_white.png'
+                        : '/images/logo_black.png'
+                    "
+                    alt="Codort"
+                    class="h-[70px]"
+                  />
                 </nuxt-link>
               </div>
               <!-- color mode -->
@@ -71,6 +76,8 @@
                 </ColorScheme>
                 <Icon name="fa:sun-o" class="w-0 h-0"></Icon>
                 <Icon name="fa:moon-o" class="w-0 h-0"></Icon>
+                <NuxtImg src="/images/logo_white.png" class="w-0 h-0" />
+                <NuxtImg src="/images/logo_black.png" class="w-0 h-0" />
               </div>
             </div>
             <div class="hidden sm:block font-mark pb-6 ps-3">
