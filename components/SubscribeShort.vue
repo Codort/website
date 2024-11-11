@@ -46,9 +46,7 @@
                       <a
                         href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
                       >
-                        Privacy Policy
-                      </a>
-                      .
+                        Privacy Policy</a>
                     </span>
                   </label>
                 </fieldset>

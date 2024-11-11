@@ -16,14 +16,14 @@
         class="button flex items-left justify-left gap-4 sm:gap-0 sm:justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
       >
         <Icon name="fa:phone" color="black" size="33px" class="mr-2" />
-        <span class="text-lg">Book a call</span>
+        <span class="text-lg !text-black dark:!text-black">Book a call</span>
       </a>
       <a
         href="https://www.linkedin.com/company/codort/"
         class="button flex items-left justify-left gap-4 sm:gap-0 sm:justify-between py-2.5 mb-3 sm:mb-0 w-full sm:w-auto"
       >
         <Icon name="jam:linkedin" color="black" size="33px" class="mr-2" />
-        <span class="text-lg">Follow us</span>
+        <span class="text-lg !text-black dark:!text-black">Follow us</span>
       </a>
     </div>
     <div class="flex flex-col items-center mb-10">

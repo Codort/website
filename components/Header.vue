@@ -13,10 +13,10 @@
     >
       <div class="">
         <div class="relative flex items-center justify-between h-12">
+          <!-- Mobile menu button-->
           <div
-            class="absolute inset-y-0 left-0 flex items-center sm:hidden pb-2"
+            class="absolute inset-y-0 left-0 flex items-center sm:hidden pt-2"
           >
-            <!-- Mobile menu button-->
             <button
               type="button"
               class="inline-flex items-center justify-center me-10 rounded-md dark:text-white focus:outline-none"
@@ -42,23 +42,24 @@
           <div
             class="items-start justify-start sm:items-stretch sm:justify-start w-[100%]"
           >
+          <!-- above bar -->
             <div
-              class="flex-shrink-0 flex justify-between items-end pb-2 sm:pb-0 sm:border-b-2 border-black dark:border-white w-[100%]"
+              class="flex justify-between items-center sm:border-b-2 border-black dark:border-white w-[100%]"
             >
-              <div class="hover:text-gray-900">
+            <!-- logo -->
+              <div class="hover:text-gray-900 ps-6 sm:ps-0">
                 <nuxt-link
-                  class="ps-10 sm:ps-0 dark:text-white dark:hover:text-slate-400"
+                  class="dark:text-white dark:hover:text-slate-400"
                   to="/"
                 >
                 <NuxtImg
                   :src="isDark ? '/images/logo_white.png' : '/images/logo_black.png'"
                   alt="Codort"
-                  class="ps-10 pb-2 sm:p-0 h-[70px]" />
+                  class="h-[70px]" />
                 </nuxt-link>
-                
-                <!-- </div> -->
               </div>
-              <div class="flex items-center justify-end pb-5 sm:pb-2">
+              <!-- color mode -->
+              <div class="">
                 <ColorScheme placeholder="" tag="span">
                   <UButton
                     :icon="isDark ? 'i-fa-moon-o' : 'i-fa-sun-o'"
