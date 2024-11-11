@@ -163,20 +163,22 @@
   }
 
   .bg-gradient-light {
-    background: radial-gradient(
-      circle at 20% 30%,
-      #ff9103 0%,
-      #f4b5d0 40%,
-      #e9ebe2 100%
+    background: linear-gradient(
+      to bottom left,
+      #6e9ab2 0%,
+      #f9ad8a 40%,
+      #e3aab2 60%,
+      #fdc000 100%
     );
   }
 
   .bg-gradient-dark {
-    background: radial-gradient(
-      circle at 0% -40%,
-      #000000 0%,
-      #142038 85%,
-      #fe9c5a 100%
+    background: linear-gradient(
+      to bottom right,
+      #0f1e34 60%,
+      #bd99c3 70%,
+      #e3aab2 80%,
+      #f9ad8a 100%
     );
   }
 

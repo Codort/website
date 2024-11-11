@@ -4,7 +4,7 @@
     class="mt-auto text-black dark:text-white pt-2 transition-colors z-50"
   >
     <div
-      class="w-full bg-[#c99696] dark:bg-[#060910] px-2 sm:px-6 lg:px-10 py-5 sm:flex justify-between"
+      class="w-full bg-cdtpink dark:bg-navy px-2 sm:px-6 lg:px-10 py-5 sm:flex justify-between"
     >
       <div class="px-4 sm:px-0">
         <NuxtLink to='/'  class="pb-4 sm:pb-10 h2 block">Codort</NuxtLink>

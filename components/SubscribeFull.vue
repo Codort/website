@@ -65,9 +65,7 @@
                   <a
                     href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
                   >
-                    Privacy Policy
-                  </a>
-                  . You can unsubscribe at any time.
+                    Privacy Policy</a>. You can unsubscribe at any time.
                   <span class="asterisk">*</span>
                 </p>
                 <fieldset

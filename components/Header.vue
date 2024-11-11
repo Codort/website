@@ -3,11 +3,11 @@
   <header class="sm:justify-start sm:flex-nowrap z-11 w-full">
     <nav
       id="main-header"
-      class="transition-colors duration-500 fixed w-full z-10 top-0 pt-10 pb-5 px-2 sm:px-6 lg:px-10 bg-[#f0afae] dark:bg-[#080d17]"
+      class="transition-colors duration-500 fixed w-full z-10 top-0 pt-10 pb-5 px-2 sm:px-6 lg:px-10 bg-cdtpink dark:bg-navy"
       :class="[
         scrollPosition >= 100
           ? 'opacity-90'
-          : 'bg-transparent dark:bg-transparent',
+          : '!bg-transparent !dark:bg-transparent',
         '',
       ]"
     >
@@ -47,14 +47,18 @@
             >
               <div class="hover:text-gray-900">
                 <nuxt-link
-                  class="text-4xl ps-10 sm:ps-0 dark:text-white dark:hover:text-slate-400"
+                  class="ps-10 sm:ps-0 dark:text-white dark:hover:text-slate-400"
                   to="/"
                 >
-                  Codort
+                <NuxtImg
+                  :src="isDark ? '/images/logo_white.png' : '/images/logo_black.png'"
+                  alt="Codort"
+                  class="ps-10 pb-2 sm:p-0 h-[70px]" />
                 </nuxt-link>
+                
                 <!-- </div> -->
               </div>
-              <div class="flex items-center justify-end pb-3 sm:pb-2">
+              <div class="flex items-center justify-end pb-5 sm:pb-2">
                 <ColorScheme placeholder="" tag="span">
                   <UButton
                     :icon="isDark ? 'i-fa-moon-o' : 'i-fa-sun-o'"
@@ -68,7 +72,7 @@
                 <Icon name="fa:moon-o" class="w-0 h-0"></Icon>
               </div>
             </div>
-            <div class="hidden sm:block left-0 font-mark pb-6">
+            <div class="hidden sm:block font-mark pb-6 ps-3">
               <div class="flex space-x-4">
                 <NuxtLink
                   v-for="item in menu"
