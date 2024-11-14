@@ -4,9 +4,13 @@
     class="flex flex-col min-h-screen min-w-screen w-full bg-gradient-light dark:bg-gradient-dark m-0 h-full"
   >
     <Header />
-    <main class="flex-grow flex min-h-screen px-2 sm:px-6 lg:px-10 mt-36">
-      <slot />
+    <main class="flex-grow flex min-h-screen">
+      <div class="w-full h-full min-h-screen pt-[150px] md:pt-[50px]">
+        <slot />
+      </div>
     </main>
     <Footer />
   </div>
 </template>
+
+<script setup lang="ts"></script>

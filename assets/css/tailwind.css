@@ -30,9 +30,11 @@
   .p,
   li,
   ul,
+  b,
+  .b,
   a,
   .a {
-    @apply text-black dark:text-white transition-colors ease-linear duration-300;
+    @apply transition-colors ease-linear duration-300;
   }
 
   h1,
@@ -47,38 +49,65 @@
   .h5,
   p,
   .p,
+  b,
+  .b,
   li,
   ul {
-    @apply text-black dark:text-white;
+    @apply text-black dark:text-white no-underline;
+  }
+
+  ul,
+  li {
+    @apply font-medium;
+  }
+
+  li {
+    @apply mb-[0.5rem];
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li::before {
+    content: '';
+    display: inline-block;
+    width: 0.77em;
+    height: 0.7em;
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    margin-right: 0.5em;
+    @apply bg-gradient-dark-two dark:bg-gradient-light-two;
   }
 
   h1,
   .h1 {
-    @apply text-6xl font-bold;
+    @apply text-6xl;
   }
 
   h2,
   .h2 {
-    @apply text-3xl font-semibold;
+    @apply text-3xl;
   }
 
   h3,
   .h3 {
-    @apply text-2xl font-semibold;
+    @apply text-2xl;
   }
 
   h4,
   .h4 {
-    @apply text-xl font-semibold;
+    @apply text-xl;
   }
 
   h5,
   .h5 {
-    @apply text-lg font-semibold;
+    @apply text-lg;
   }
 
   p,
-  .p {
+  .p,
+  b,
+  .b {
     @apply text-base;
   }
 
@@ -94,13 +123,9 @@
     @apply h3;
   }
 
-  .prose a {
-    @apply a;
-  }
-
   a,
   .a {
-    @apply text-gray-600 hover:text-black dark:text-[#c7c7bf] dark:hover:text-black;
+    @apply text-gray-600 hover:text-black dark:text-[#c7c7bf] dark:hover:text-black font-semibold cursor-pointer;
   }
 
   .asterisk {
@@ -119,11 +144,9 @@
 
   .button {
     position: relative;
-    width: 250px;
-    height: 50px;
     clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
     overflow: hidden;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-decoration: none;
     background-color: #e5fcf5;
     cursor: pointer;
@@ -140,21 +163,31 @@
   }
 
   .bg-gradient-light {
-    background: radial-gradient(
-      circle at 20% 30%,
-      #ff9103 0%,
-      #f4b5d0 40%,
-      #e9ebe2 100%
+    background: linear-gradient(
+      to bottom left,
+      #6e9ab2 0%,
+      #f9ad8a 40%,
+      #e3aab2 60%,
+      #fdc000 100%
     );
   }
 
   .bg-gradient-dark {
-    background: radial-gradient(
-      circle at 0% -40%,
-      #000000 0%,
-      #142038 85%,
-      #fe9c5a 100%
+    background: linear-gradient(
+      to bottom right,
+      #0f1e34 60%,
+      #bd99c3 90%,
+      #e3aab2 95%,
+      #f9ad8a 100%
     );
+  }
+
+  .bg-gradient-light-two {
+    background: linear-gradient(to right bottom, #ff9103, #f4b5d0 80%);
+  }
+
+  .bg-gradient-dark-two {
+    background: linear-gradient(to right bottom, #ffffff, #142038 60%);
   }
 
   .noise-overlay {
@@ -167,6 +200,16 @@
     opacity: 0.6;
     pointer-events: none;
     mix-blend-mode: overlay;
+    z-index: -100;
+  }
+
+  .hex-img {
+    filter: url(~/assets/svgs/hexagon-container.svg#round);
+  }
+
+  .hex-img img {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+    @apply object-cover h-auto aspect-[11/10];
   }
 
   footer a {
@@ -177,12 +220,19 @@
     @apply no-underline text-black visited:text-black hover:text-black;
   }
 
-  .bloglist a,
-  .taglist a {
-    @apply no-underline text-black hover:text-gray-600 visited:text-black;
+  .tag {
+    @apply bg-coral rounded-full px-2 py-1 text-xs font-bold text-gray-700 m-1.5 no-underline;
   }
 
-  .taglist a {
-    @apply hover:text-gray-400;
+  .bloglist a {
+    @apply no-underline;
+  }
+
+  .hex {
+    content: '';
+    width: 0.66em;
+    height: 0.6em;
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    @apply bg-gradient-dark-two dark:bg-gradient-light-two mx-[0.5em] inline-block;
   }
 }

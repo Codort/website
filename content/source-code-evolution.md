@@ -6,9 +6,7 @@ date: '2024-09-24'
 cover: 'covers/typein.png'
 tags:
   - 'blog'
-hidden: false
 draft: false
-listed: true
 ---
 
 We're going back 70 years to look at how managing source code has evolved.

@@ -2,19 +2,21 @@
 <template>
   <header class="sm:justify-start sm:flex-nowrap z-11 w-full">
     <nav
-      class="transition-colors fixed w-full z-10 top-0 pt-10 pb-5 px-2 sm:px-6 lg:px-10 bg-[#f0afae] dark:bg-[#080d17] bg-opacity-[0.97] dark:bg-opacity-[0.97]"
-      :class="{
-        'md:bg-transparent': isTransparent || $route.meta.transparentHeader,
-        'md:dark:bg-transparent':
-          isTransparent || $route.meta.transparentHeader,
-      }"
+      id="main-header"
+      class="transition-colors duration-500 fixed w-full z-10 top-0 pt-10 pb-5 px-2 sm:px-6 lg:px-10 bg-cdtpink dark:bg-navy"
+      :class="[
+        scrollPosition >= 100
+          ? 'opacity-90'
+          : '!bg-transparent !dark:bg-transparent',
+        '',
+      ]"
     >
       <div class="">
         <div class="relative flex items-center justify-between h-12">
+          <!-- Mobile menu button-->
           <div
-            class="absolute inset-y-0 left-0 flex items-center sm:hidden pb-2"
+            class="absolute inset-y-0 left-0 flex items-center sm:hidden pt-2"
           >
-            <!-- Mobile menu button-->
             <button
               type="button"
               class="inline-flex items-center justify-center me-10 rounded-md dark:text-white focus:outline-none"
@@ -40,22 +42,31 @@
           <div
             class="items-start justify-start sm:items-stretch sm:justify-start w-[100%]"
           >
+            <!-- above bar -->
             <div
-              class="flex-shrink-0 flex justify-between items-end pb-2 sm:pb-0 sm:border-b-2 border-black dark:border-white w-[100%]"
+              class="flex justify-between items-center sm:border-b-2 border-black dark:border-white w-[100%]"
             >
-              <div class="hover:text-gray-900">
+              <!-- logo -->
+              <div class="hover:text-gray-900 ps-6 sm:ps-0">
                 <nuxt-link
-                  class="text-4xl ps-10 sm:ps-0 dark:text-white dark:hover:text-slate-400"
+                  class="dark:text-white dark:hover:text-slate-400"
                   to="/"
                 >
-                  Codort
+                  <NuxtImg
+                    :src="
+                      isDark
+                        ? '/images/logo_white.png'
+                        : '/images/logo_black.png'
+                    "
+                    alt="Codort"
+                    class="h-[70px]"
+                  />
                 </nuxt-link>
-                <!-- </div> -->
               </div>
-              <div class="flex items-center justify-end pb-3 sm:pb-2">
+              <!-- color mode -->
+              <div class="">
                 <ColorScheme placeholder="" tag="span">
                   <UButton
-                    v-model="isDark"
                     :icon="isDark ? 'i-fa-moon-o' : 'i-fa-sun-o'"
                     variant="ghost"
                     class="text-black dark:text-white"
@@ -65,9 +76,11 @@
                 </ColorScheme>
                 <Icon name="fa:sun-o" class="w-0 h-0"></Icon>
                 <Icon name="fa:moon-o" class="w-0 h-0"></Icon>
+                <NuxtImg src="/images/logo_white.png" class="w-0 h-0" />
+                <NuxtImg src="/images/logo_black.png" class="w-0 h-0" />
               </div>
             </div>
-            <div class="hidden sm:block left-0 font-mark pb-6">
+            <div class="hidden sm:block font-mark pb-6 ps-3">
               <div class="flex space-x-4">
                 <NuxtLink
                   v-for="item in menu"
@@ -102,7 +115,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { loadIcons } from '@iconify/vue';
 
 const config: any = useAppConfig();
 const menu = config.menu;
@@ -111,19 +123,23 @@ const mobileMenuOpen = ref(false);
 const colorMode = useColorMode();
 const isDark = ref(false);
 
+const scrollPosition = ref(0);
+
+function handleScroll() {
+  scrollPosition.value = window.scrollY;
+}
 onMounted(() => {
   isDark.value = colorMode.preference === 'dark';
+  scrollPosition.value = window.scrollY;
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
 });
 
 const toggleColourMode = () => {
   isDark.value = !isDark.value;
   colorMode.preference = isDark.value ? 'dark' : 'light';
 };
-
-defineProps({
-  isTransparent: {
-    type: Boolean,
-    default: false,
-  },
-});
 </script>

@@ -12,23 +12,25 @@
   },
   "scripts": {
     "build": "nuxt build",
+    "start": "nuxt start",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "lint": "npm run lint:eslint && npm run lint:prettier",
-    "lint:eslint": "eslint .",
-    "lint:prettier": "prettier . --check",
+    "postinstall": "nuxt prepare",
+    "lint": "yarn run eslint && yarn run prettier",
+    "eslint": "eslint .",
+    "prettier": "prettier . --check",
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
-    "@bloggrify/core": "1.4.1",
+    "@nuxt/content": "^2.13.4",
     "@nuxt/icon": "^1.1.1",
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.18.7",
     "@nuxtjs/color-mode": "^3.5.1",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@vesp/nuxt-fontawesome": "^1.1.0",
-    "nuxt": "3.11.2"
+    "nuxt": "^3.13.2",
+    "remark-reading-time": "^2.0.1"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
@@ -37,6 +39,7 @@
     "@iconify-json/fa": "^1.2.0",
     "@iconify-json/fa-brands": "^1.2.0",
     "@iconify-json/fa-solid": "^1.2.0",
+    "@iconify-json/fa6-brands": "^1.2.1",
     "@iconify-json/heroicons": "^1.2.1",
     "@iconify-json/ic": "^1.2.1",
     "@iconify-json/jam": "^1.1.8",

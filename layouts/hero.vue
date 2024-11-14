@@ -4,10 +4,10 @@
     class="flex flex-col min-h-screen bg-gradient-light dark:bg-gradient-dark m-0"
   >
     <div class="noise-overlay m-0"></div>
-    <Header :is-transparent="true" />
-    <main class="flex-grow flex items-center px-6">
+    <Header />
+    <main class="flex-grow px-6 flex items-center justify-center">
       <slot />
     </main>
-    <Footer :is-transparent="true" />
+    <Footer class="mt-auto" />
   </SlowRadialBlur>
 </template>
