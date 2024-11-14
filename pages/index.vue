@@ -1,15 +1,11 @@
 <!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
-  <div
-    class="relative w-full flex flex-col items-center my-0 py-0 pt-[100px] sm:pt-0"
-  >
-    <h1 class="text-left sm:text-center">
-      Say hello to source code orchestration
+  <div class="relative w-full flex flex-col items-center">
+    <h1 class="text-left sm:text-center pb-5">
+      We believe that 99% of all code <br />
+      will be open-source by 2035.
     </h1>
-    <h2>
-      Code how <span class="text-coral">you</span> want and leave the
-      integrations to us.
-    </h2>
+    <h2>We're building the platform to make this vision a reality.</h2>
     <div
       class="flex gap-3 flex-col items-center sm:flex-row mt-10 mb-5 pb-5 me-6"
     >
@@ -22,7 +18,7 @@
           size="33px"
           class="mr-2 !text-black dark:!text-black"
         />
-        <span class="text-lg !text-black dark:!text-black">Book a call</span>
+        <span class="text-lg !text-black dark:!text-black">Learn more</span>
       </a>
       <a
         href="https://www.linkedin.com/company/codort/"

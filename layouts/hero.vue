@@ -5,9 +5,9 @@
   >
     <div class="noise-overlay m-0"></div>
     <Header />
-    <main class="flex-grow flex items-center px-6 min-h-screen">
+    <main class="flex-grow px-6 flex items-center justify-center">
       <slot />
     </main>
-    <Footer />
+    <Footer class="mt-auto" />
   </SlowRadialBlur>
 </template>

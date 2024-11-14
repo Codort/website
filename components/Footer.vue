@@ -3,7 +3,7 @@
   <footer
     class="mt-auto text-black dark:text-white pt-2 transition-colors z-50"
   >
-    <div
+    <!-- <div
       class="w-full bg-cdtpink dark:bg-navy px-2 sm:px-6 lg:px-10 py-5 sm:flex justify-between"
     >
       <div class="px-4 sm:px-0">
@@ -21,10 +21,10 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <div
-      class="sm:flex justify-between bg-[#f0afae] dark:bg-[#080d17] w-full px-2 sm:px-6 lg:px-10 py-3"
+      class="sm:flex justify-between bg-transparent w-full px-2 sm:px-6 lg:px-10 py-3"
     >
       <div class="inline mb-2 space-x-2 text-sm text-black dark:text-white">
         <p class="inline text-sm">
