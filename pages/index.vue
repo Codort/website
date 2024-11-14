@@ -1,6 +1,6 @@
 <!-- Licensed under Apache-2.0. See LICENSE and NOTICE in the root-level directory for full license and copyright details. -->
 <template>
-  <div class="relative w-full flex flex-col items-center">
+  <div class="relative w-full flex flex-col items-center pt-[150px] sm:pt-0">
     <h1 class="text-left sm:text-center pb-5">
       We believe that 99% of all code <br />
       will be open-source by 2035.
