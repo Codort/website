@@ -3,7 +3,7 @@
   <div class="relative w-full flex flex-col items-center pt-[150px] sm:pt-0">
     <h1 class="text-left sm:text-center pb-5">
       We believe that 99% of all code <br />
-      will be open-source by 2035.
+      will be open source by 2035.
     </h1>
     <h2>We're building the platform to make this vision a reality.</h2>
     <div
