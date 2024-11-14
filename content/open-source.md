@@ -1,9 +1,9 @@
 ---
-id: 'cdt20241014'
+id: 'cdt20241114'
 title: 'Are we open source?'
 description: 'Looking at definitions of open source and open core we consider where Codort sits and our journey to get there.'
-date: '2024-10-14'
-cover: 'covers/cody.png'
+date: '2024-11-14'
+cover: 'covers/os_icon.png'
 tags:
   - 'blog'
 hidden: false
@@ -12,7 +12,7 @@ listed: true
 ---
 
 There are many companies that call themselves 'open source' or 'open core', even if they're not.
-We take a look at these descriptions, situate ourselves among them and then describe the motivations and process to make our repositories open source.
+We take a look at these descriptions, situate ourselves among them and then describe the motivation and process to make our repositories open source.
 
 ### Open source and open core
 
@@ -20,7 +20,7 @@ Let's start with some definitions.
 Originally, the term 'open source' referred to software released under open-source licenses, which are licenses that waive many of the restrictions of copyright, allowing users to use, copy, modify, and redistribute underlying source code for free.
 
 A company cannot be 'open source', although some companies may self-describe themselves in that way if they release _all_ their code under open-source licenses.
-[Red Hat](https://www.redhat.com/) is sometimes referred to as an 'open source company' as they are radically transparent, have a flat internal hierarchy, and the software they produce is all open source.
+[Red Hat](https://www.redhat.com/) is sometimes referred to as an 'open source company' as they are radically transparent, have a flat hierarchy, and the software they produce is all open source.
 Red Hat makes money by selling training and consulting, as well as enterprise versions of open-source products.
 
 'Open core' refers to a business model where a company releases their core code under an open-source license but keeps a portion of the code 'closed-source' under proprietary licenses.
@@ -28,7 +28,7 @@ Red Hat makes money by selling training and consulting, as well as enterprise ve
 
 ### How open is Codort?
 
-Codort has some [open-source repositories](https://github.com/Codort) but we are **not** open core and we will never pretend to be.
+Codort has some [open-source repositories](https://github.com/Codort) but that does not mean we are open core (though this might change in the future).
 We believe that companies should make their code as open as possible as there are huge benefits both to the company and other developers.
 You can see the benefits to contributors in our [contributing guide](https://github.com/Codort/website/blob/main/CONTRIBUTING.md).
 For companies, we see three big benefits:
@@ -57,14 +57,14 @@ If any of these topics are of interest, let us know and we will write a longer b
 We knew we wanted to use a permissive licence that places the minimum restrictions on developers.
 As we are not open-sourcing any code that might be commercially sensitive, there was no benefit in using licenses with more restrictions such as copyleft licences.
 When choosing between licences, we considered MIT, Apache 2.0, and BSD+Patent.
-We opted for Apache 2.0 as it was the most popular permissive licence that has required clauses around trademark and patent rights.
+We opted for Apache 2.0 as it was the most popular permissive licence that also includes clauses around trademark and patent rights.
 Apache 2.0 can be frustrating to use as many developers and companies forget to attach a separate NOTICE file and often don't attach licence headers.
 To make this as simple as possible, we have a short NOTICE file in the root of our directory which provides copyright information, and we have simplified headers in all our source code to remind contributors that we use Apache 2.0 everywhere.
 
 **DCO vs CLA**
 
 A Contributor Licence Agreement (CLA) is an agreement that primarily governs how IP is shared between contributors and the project they contributed to.
-CLAs can be quite popular in companies as they provide the organisation with more control over future re-licensing decisions.
+CLAs are popular as they provide the organisation with more control over future re-licensing decisions.
 At Codort, we are quite suspicious of CLAs because they can, and often are, used to 'rugpull', which in this context means changing the code licence from open-source to closed-source.
 If someone contributes code to our platform for free, with the intention of that code being used for free, then we believe any change to that implicit agreement is unfair and exploitative.
 For this reason we do not use CLAs, moreover we have [publicly pledged](https://github.com/Codort/website/blob/main/CONTRIBUTING.md#the-mutual-benefits-of-open-source) never to relicense our open-source code with closed-source licences.
@@ -90,7 +90,7 @@ Our guidelines also state how we use our DCO and how we recognise our community 
 
 **Our community**
 
-There are many platforms for working with open-source communities, and we hope Codort will help consolidate some of these platforms in the future.
+There are many platforms for working with open-source communities.
 For now, we decided to use Discord to communicate with our community as we recognise it's a platform preferred by developers worldwide.
 In particular, Discord offers _a lot_ for free, including a huge marketplace of bots that can be very powerful for community management and moderation.
 To grow our community, we are partnering with open-source organisations who can help us find community contributors and understand community needs so we can best support them.
@@ -101,5 +101,5 @@ Finally, we are currently using [All Contributions](https://allcontributors.org/
 
 ### Developer survey
 
-If you've made it this far and can spare another five minutes, we are running a survey to understand how code management impacts the developer experience.
-If you are a developer, [please consider taking our survey](go.codort.com/tools-survey).
+We're on a mission to make it _so_ beneficial for companies to create, consume, and comply with open source, that it would be a bad idea not to do it.
+Keep up-to-date with our progress by [subscribing to our newsletter](https://go.codort.com/newsletter).

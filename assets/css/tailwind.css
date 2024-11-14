@@ -33,7 +33,8 @@
   b,
   .b,
   a,
-  .a {
+  .a,
+  strong {
     @apply transition-colors ease-linear duration-300;
   }
 
@@ -52,7 +53,8 @@
   b,
   .b,
   li,
-  ul {
+  ul,
+  strong {
     @apply text-black dark:text-white no-underline;
   }
 
