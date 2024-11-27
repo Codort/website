@@ -12,13 +12,15 @@
         novalidate=""
       >
         <div id="mc_embed_signup_scroll p-0" class="flex flex-col">
-          <div class="block sm:flex align-middle items-center self-center">
-            <div class="mc-field-group self-center pb-4 sm:pb-0">
+          <div
+            class="flex flex-col sm:flex-row align-middle items-center self-center gap-2 w-[300px] sm:w-full"
+          >
+            <div class="mc-field-group self-center grow w-full">
               <input
                 id="mce-EMAIL"
                 type="email"
                 name="EMAIL"
-                class="required email input p-0 m-0 ps-2 me-20 dark:border-white h-[2.5rem]"
+                class="required email input p-0 m-0 ps-2 me-20 dark:border-white h-[2.5rem] grow w-full"
                 required=""
                 value=""
                 placeholder="Email address"
@@ -51,7 +53,7 @@
               />
             </div>
             <div
-              class="border-black dark:border-white border-2 hover:border-coral hover:dark:border-coral transition-all duration-300 rounded-md self-center"
+              class="border-black dark:border-white border-2 hover:border-coral hover:dark:border-coral transition-all duration-300 rounded-md self-center grow w-full sm:w-[270px]"
             >
               <button
                 id="mc-embedded-subscribe"
@@ -64,7 +66,7 @@
                   >Subscribe to our newsletter</span
                 >
                 <span v-if="formName === 'adopter'" class="ps-2"
-                  >Become an early adopter</span
+                  >Join Waiting List</span
                 >
               </button>
             </div>
@@ -91,7 +93,8 @@
                     <a
                       href="https://docs.google.com/document/d/1wIBfNnJr3G19zIkc7fjeoZVdJZFhx2l4yDhjPws47iM/edit?usp=sharing"
                     >
-                      Privacy Policy</a>
+                      Privacy Policy</a
+                    >
                     <span class="asterisk">*</span>
                   </span>
                 </label>

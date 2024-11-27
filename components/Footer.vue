@@ -46,7 +46,7 @@
           <div v-for="social in config.socials" :key="social.name">
             <NuxtLink
               :aria-label="`Our ${social.name}`"
-              class="text-sm a transition"
+              class="text-sm a transition dark:!text-navy hover:!text-coral hover:dark:!text-coral"
               target="_blank"
               :to="social.url"
             >
